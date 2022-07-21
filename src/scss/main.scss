@@ -2,16 +2,26 @@
 * Переменные
 */
 
-@import "vars.scss";
+@import "./vars";
 
 /*
 * Настройки
 */
 
-@import "settings.scss";
+@import "./settings";
 
 /*
 * Миксины
 */
 
-@import "mixins/mini";
+@import "./mixins/font-face";
+@import "./mixins/media";
+@import "./mixins/mini";
+
+
+
+/*
+* Шрифты
+*/
+
+@import "./fonts";

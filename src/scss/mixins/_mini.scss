@@ -1,4 +1,9 @@
+@mixin flex {
+    display: flex;
+}
+
 @mixin flex-sb {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
