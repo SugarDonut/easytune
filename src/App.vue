@@ -36,11 +36,11 @@
             </div>
           </div>
           <div class="tune__content-right">
-            <div class="tune__content-right__fb tune-mb">
+            <div class="tune__content-right__fb white-block">
               <img src="./img/img-engine.svg" alt="" />
               <p>Improvement in engine performance</p>
             </div>
-            <div class="tune__content-right__sb tune-mb">
+            <div class="tune__content-right__sb white-block">
               <p>Energy booster</p>
               <img src="./img/img-engine-boost.svg" alt="" />
             </div>
@@ -65,7 +65,7 @@ export default {
 .header {
   background: linear-gradient(180deg, #e9e9e9 -15.83%, #ffffff 93.18%);
   &__container {
-    @include flex-sb;
+    @include flex-c-sb;
   }
 
   &--main {
@@ -73,7 +73,7 @@ export default {
   }
 
   &__logo {
-    min-width: 140px;
+    min-width: 130px;
   }
 }
 
@@ -124,7 +124,11 @@ export default {
     &--main {
       border: solid 1px transparent;
       border-radius: 10px;
-      background-image: linear-gradient(90deg, #4dadd8 18%, #81e9c0 100%);
+      background-image: linear-gradient(
+        90deg,
+        var(--grad-Shakespeare) 18%,
+        var(--grad-Riptide) 100%
+      );
       background-origin: border-box;
     }
 
@@ -151,14 +155,11 @@ export default {
   }
 
   &__content {
-    @include flex;
-    justify-content: space-between;
+    @include flex-sb;
 
-    .tune-mb {
-      background-color: #fff;
+    .white-block {
+      background-color: var(--color-white);
       border-radius: 18px;
-      margin-right: 10px;
-      transform: translateX(-70px);
     }
 
     &-left {
@@ -170,15 +171,15 @@ export default {
       align-items: flex-start;
       flex-wrap: wrap;
       flex-direction: column;
-      transform: translateX(90px);
+      transform: translateY(80px);
 
       &__fb {
         width: 165px;
-        margin-top: 80px;
-        margin-bottom: 27px;
-        padding: 28px 24px;
+        // margin-top: 80px;
+        margin-bottom: 20px;
+        padding: 31px 24px;
 
-        img{
+        img {
           margin-bottom: 6px;
         }
       }
@@ -190,7 +191,7 @@ export default {
         padding-right: 25px;
         width: 204px;
 
-        img{
+        img {
           transform: translateY(-8px);
         }
       }

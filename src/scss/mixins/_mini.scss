@@ -2,9 +2,14 @@
     display: flex;
 }
 
-@mixin flex-sb {
+@mixin flex-c-sb {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-sb {
+    display: flex;
     justify-content: space-between;
 }
 
