@@ -42,7 +42,7 @@
             </div>
             <div class="tune__content-right__sb tune-mb">
               <p>Energy booster</p>
-              <img src="./img/img-engine-boost.svg" alt="">
+              <img src="./img/img-engine-boost.svg" alt="" />
             </div>
           </div>
         </div>
@@ -151,13 +151,14 @@ export default {
   }
 
   &__content {
-    @include flex-sb;
+    @include flex;
+    justify-content: space-between;
 
     .tune-mb {
-    background-color: #fff;
-    width: 174px;
-    padding: 20px;
-    border-radius: 18px;
+      background-color: #fff;
+      border-radius: 18px;
+      margin-right: 10px;
+      transform: translateX(-70px);
     }
 
     &-left {
@@ -165,11 +166,33 @@ export default {
     }
 
     &-right {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      flex-direction: column;
+      transform: translateX(90px);
+
       &__fb {
-        margin-bottom: 20px;
+        width: 165px;
+        margin-top: 80px;
+        margin-bottom: 27px;
+        padding: 28px 24px;
+
+        img{
+          margin-bottom: 6px;
+        }
       }
 
       &__sb {
+        display: flex;
+        padding-top: 26px;
+        padding-left: 31px;
+        padding-right: 25px;
+        width: 204px;
+
+        img{
+          transform: translateY(-8px);
+        }
       }
     }
   }
