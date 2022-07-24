@@ -64,12 +64,9 @@
               <p>Increasing engine power</p>
             </div>
             <div class="chip-block chip-block_speed white-block">
-              <img class="img" src="./img/speed.png" alt="" />
-              <p class="descr">
-                Increasing <br />
-                the efficiency and performance     
-                           
-              </p>
+              <img src="./img/speed.png" alt="" />
+              <p>Increasing <br />
+                the efficiency and performance</p>
             </div>
           </div>
         </div>
