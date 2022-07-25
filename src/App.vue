@@ -22,8 +22,8 @@
         <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
       </div>
     </div>
-    <section class="tune tune__bg">
-      <div class="container">
+    <section class="tune ">
+      <div class="container tune__bg">
         <div class="tune__content">
           <div class="tune__left">
             <span class="tune__left--slogan">tune it fast</span>
@@ -111,6 +111,11 @@
             <!-- <img src="./img/graph.png" alt=""> -->
           </div>
         </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container header--main">
+        <h2 class="title">Our advantages</h2>
       </div>
     </section>
   </header>
