@@ -2,6 +2,11 @@
     display: flex;
 }
 
+@mixin flex-wr{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @mixin flex-c-sb {
     display: flex;
     align-items: center;

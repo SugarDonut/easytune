@@ -1,0 +1,116 @@
+.advantages {
+  background-color: #F6F6F6;
+}
+// .header--main {
+// }
+// .container {
+// }
+.advantages-block {
+  // background-image: url(./img/Car-bg-2.png);
+  // background-repeat: no-repeat;
+  // background-position: left bottom 10px;
+  @include flex-sb;
+
+  // .advantages-block_subtitle
+
+  &__percent {
+    margin-bottom: 50px;
+
+    .percent-soutent {
+      @include flex;
+      position: relative;
+      margin-top: 57px;
+      margin-left: 113px;
+
+      &__one {
+        margin-right: 16px;
+      }
+
+      &__two {
+        width: 208px;
+      }
+
+      &__southent {
+        font-weight: 600;
+        font-size: 205px;
+        line-height: 135px;
+        color: rgba(56, 92, 232, 0.2);
+      }
+
+      &__title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #212121;
+      }
+
+      &__subtitle {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 27px;
+        color: #7c7c7c;
+      }
+
+      &__img {
+        position: absolute;
+        bottom: 29px;
+        top: 107px;
+        left: -55px;
+      }
+    }
+  }
+
+  &_subtitle {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    color: #7c7c7c;
+  }
+
+  // .advantages-block__list
+
+  &__list {
+    margin-top: 55px;
+    margin-bottom: 41px;
+  }
+
+  // .advantages-block__item
+
+  &__item {
+    background-color: #ddd;
+    padding: 28px 40px;
+    width: 263px;
+    height: 147px;
+  }
+
+  // .advantages-block__title
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-shaft);
+  }
+}
+.title {
+  margin-top: 56px;
+}
+
+.advantages-color {
+  &--one {
+    background-color: rgba(56, 92, 232, 0.2);
+  }
+
+  &--two {
+    background-color: #fff;
+  }
+
+  &--three {
+    background-color: #385ce8;
+  }
+
+  &--text {
+    color: var(--color-white);
+  }
+}

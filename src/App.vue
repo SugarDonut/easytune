@@ -22,7 +22,7 @@
         <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
       </div>
     </div>
-    <section class="tune ">
+    <section class="tune">
       <div class="container tune__bg">
         <div class="tune__content">
           <div class="tune__left">
@@ -114,8 +114,50 @@
       </div>
     </section>
     <section class="advantages">
-      <div class="container header--main">
-        <h2 class="title">Our advantages</h2>
+      <div class="container">
+        <div class="advantages-block">
+          <div class="advantages-block__percent">
+            <h2 class="title">Our advantages</h2>
+            <div class="percent-soutent">
+              <div class="percent-soutent__one">
+                <span class="percent-soutent__southent">100%</span>
+              </div>
+              <div class="percent-soutent__two">
+                <h3 class="percent-soutent__title">refund guarantee</h3>
+                <p class="percent-soutent__subtitle">
+                  within 30 days if processed file doesn't work
+                </p>
+              </div>
+              <img
+                class="percent-soutent__img"
+                src="./img/Car-bg-2.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <ul class="advantages-block__list list-reset">
+            <li class="advantages-block__item advantages-color--one">
+              <h4 class="advantages-block__title">Tested solutions only</h4>
+              <p class="advantages-block_subtitle">
+                All solution are real car tested
+              </p>
+            </li>
+            <li class="advantages-block__item advantages-color--two">
+              <h4 class="advantages-block__title">Free registration</h4>
+              <p class="advantages-block_subtitle">Pay only when you buy</p>
+            </li>
+            <li class="advantages-block__item advantages-color--three">
+              <h4 class="advantages-block__title advantages-color--text">
+                Solutions added regularly
+              </h4>
+              <p class="advantages-block_subtitle advantages-color--text">
+                New solutions appear <br />
+                every day
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </header>
