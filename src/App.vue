@@ -4,13 +4,13 @@
       <a class="header__logo" href="#"
         ><img src="./img/logo.svg" alt="Easytune logo"
       /></a>
-      <nav class="nav">
+      <!-- <nav class="nav">
         <ul class="nav__list list-reset">
-          <li class="nav__item"><a href="" class="nav__link">Tuning</a></li>
-          <li class="nav__item"><a href="" class="nav__link">History</a></li>
-          <li class="nav__item"><a href="" class="nav__link">Payment</a></li>
+          <li class="nav__item"><a href="" class="nav__link nav-color--header">Tuning</a></li>
+          <li class="nav__item"><a href="" class="nav__link nav-color--header">History</a></li>
+          <li class="nav__item"><a href="" class="nav__link nav-color--header">Payment</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <div class="btns">
         <button class="btns__btn btn-reset btn--main btns__btn--ingradient">
           Login
@@ -161,6 +161,31 @@
       </div>
     </section>
   </header>
+  <footer>
+    <div class="footer">
+      <div class="container header__container">
+        <a class="header__logo" href="#"
+          ><img src="./img/logo.svg" alt="Easytune logo"
+        /></a>
+        <nav class="nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item"><a href="" class="nav__link nav-color--footer">Privacy Policy</a></li>
+            <li class="nav__item"><a href="" class="nav__link nav-color--footer">User Agreement</a></li>
+          </ul>
+        </nav>
+        <div class="btns">
+          <button class="btns__btn btn-reset btn--main btns__btn--ingradient">
+            Login
+          </button>
+          <a href=""></a>
+          <button class="btns__btn btn-reset btn--main btns__btn--outgradient">
+            Registration
+          </button>
+          <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>
