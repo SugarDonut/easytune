@@ -1,0 +1,66 @@
+.you-can {
+}
+.container {
+}
+.title {
+}
+.service {
+  @include flex-sb;
+
+  margin-bottom: 162px;
+
+  // .service__list
+
+  &__list {
+    margin-top: 95px;
+  }
+
+  // .service__item
+
+  &__item {
+    background-image: url(./img/line.svg);
+    background-repeat: no-repeat;
+    background-position: left 10px;
+    width: 430px;
+    padding-left: 38px;
+
+    &:not(:last-child) {
+      margin-bottom: 62px;
+    }
+  }
+
+  // .service__title
+
+  &__title {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 19px;
+    color: #212121;
+    margin-bottom: 7px;
+  }
+
+  // .service__descr
+
+  &__descr {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #7c7c7c;
+  }
+
+  // .service__img
+
+  &__img {
+    margin-top: 30px;
+    object-fit: cover;
+    width: 782px;
+    height: 436px;
+    text-align: center;
+    background-image: url(./img/graph.png);
+    // background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.list-reset {
+}

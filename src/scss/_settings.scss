@@ -1,14 +1,16 @@
 html {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 *,
 *::before,
 *::after {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+
   box-sizing: inherit;
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -37,3 +39,13 @@ a {
   background: transparent;
   cursor: pointer;
 }
+
+/* Общие стили */
+.title{
+font-weight: 600;
+font-size: 35px;
+line-height: 35px;
+color: var(--color-shaft);
+}
+/* Общие стили */
+

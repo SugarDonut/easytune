@@ -1,0 +1,83 @@
+.tune {
+  &__bg {
+    background-image: url(./img/Car-bg1.png);
+    background-repeat: no-repeat;
+    background-position: right top -42px;
+  }
+
+  &__content {
+    @include flex-sb;
+    padding-top: 115px;
+    padding-bottom: 210px;
+  }
+
+  &__left {
+    max-width: 420px;
+
+    &--slogan {
+      display: block;
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: var(--color-pastel);
+      margin-bottom: 8px;
+    }
+
+    &--main-title {
+      font-size: 55px;
+      font-weight: 600;
+      line-height: 68px;
+      color: var(--color-shaft);
+      margin-bottom: 18px;
+    }
+
+    &--descr {
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 26px;
+      color: var(--color-black);
+      margin-bottom: 44px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: flex-end; // FIXME Как лучше реализовать позиционирование с машиной
+    flex-wrap: wrap;
+    flex-direction: column;
+    transform: translateY(80px);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--color-shaft);
+
+    &--fb {
+      width: 165px;
+      margin-bottom: 20px;
+      padding: 31px 24px;
+
+      img {
+        margin-bottom: 6px;
+      }
+    }
+
+    &--sb {
+      @include flex;
+      padding-top: 26px;
+      padding-left: 31px;
+      padding-right: 25px;
+      width: 204px;
+
+      img {
+        transform: translateY(-8px);
+      }
+    }
+  }
+}
+
+.white-block {
+  background-color: var(--color-white);
+  border-radius: 18px;
+  box-shadow: 5.3px 4.54px 39.34px rgba(35, 35, 35, 0.14);
+}
