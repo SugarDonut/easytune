@@ -1,5 +1,5 @@
 .advantages {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 // .header--main {
 // }
@@ -10,10 +10,12 @@
   // background-repeat: no-repeat;
   // background-position: left bottom 10px;
   @include flex-sb;
+  margin-bottom: 120px;
 
   // .advantages-block_subtitle
 
   &__percent {
+    padding-top: 55px;
     margin-bottom: 50px;
 
     .percent-hundred {
@@ -61,7 +63,7 @@
     }
   }
 
-  &_subtitle {
+  &__subtitle {
     font-weight: 400;
     font-size: 13px;
     line-height: 23px;
@@ -78,6 +80,7 @@
   // .advantages-block__item
 
   &__item {
+    position: relative;
     background-color: #ddd;
     padding: 28px 40px;
     width: 263px;
@@ -92,25 +95,43 @@
     line-height: 19px;
     color: var(--color-shaft);
   }
-}
-.title {
-  margin-top: 56px;
+
+  &__number {
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--color-white);
+    position: absolute;
+    bottom: -11px;
+    right: 23px;
+  }
 }
 
 .advantages-color {
   &--one {
     background-color: rgba(56, 92, 232, 0.2);
+    span {
+      color: var(--color-white);
+    }
   }
 
   &--two {
     background-color: #fff;
+    span {
+      color: rgba(56, 92, 232, 0.2);
+    }
   }
 
   &--three {
     background-color: #385ce8;
+    span {
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
 
   &--text {
     color: var(--color-white);
+    position: relative;
+    bottom: 0;
   }
 }
