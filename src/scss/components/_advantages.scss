@@ -16,7 +16,7 @@
   &__percent {
     margin-bottom: 50px;
 
-    .percent-soutent {
+    .percent-hundred {
       @include flex;
       position: relative;
       margin-top: 57px;
@@ -30,7 +30,7 @@
         width: 208px;
       }
 
-      &__southent {
+      &__hundred {
         font-weight: 600;
         font-size: 205px;
         line-height: 135px;

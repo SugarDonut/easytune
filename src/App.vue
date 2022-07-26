@@ -61,8 +61,8 @@
           <div class="chip-tuning__param">
             <h2 class="subtitle">Chip tuning</h2>
             <p class="descr">
-              ‒ changes in the parameters of the engine, by making changes to
-              the firmware of the controller.
+              changes in the parameters of the engine, by making changes to the
+              firmware of the controller.
             </p>
           </div>
           <div class="chip-tuning__boost">
@@ -118,24 +118,23 @@
         <div class="advantages-block">
           <div class="advantages-block__percent">
             <h2 class="title">Our advantages</h2>
-            <div class="percent-soutent">
-              <div class="percent-soutent__one">
-                <span class="percent-soutent__southent">100%</span>
+            <div class="percent-hundred">
+              <div class="percent-hundred__one">
+                <span class="percent-hundred__hundred">100%</span>
               </div>
-              <div class="percent-soutent__two">
-                <h3 class="percent-soutent__title">refund guarantee</h3>
-                <p class="percent-soutent__subtitle">
+              <div class="percent-hundred__two">
+                <h3 class="percent-hundred__title">refund guarantee</h3>
+                <p class="percent-hundred__subtitle">
                   within 30 days if processed file doesn't work
                 </p>
               </div>
               <img
-                class="percent-soutent__img"
+                class="percent-hundred__img"
                 src="./img/Car-bg-2.png"
                 alt=""
               />
             </div>
           </div>
-
           <ul class="advantages-block__list list-reset">
             <li class="advantages-block__item advantages-color--one">
               <h4 class="advantages-block__title">Tested solutions only</h4>
@@ -160,7 +159,46 @@
         </div>
       </div>
     </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts-block">
+          <div class="contacts-block__mail">
+            <h2 class="title">Our contacts</h2>
+            <div class="contacts-block__field">e-mail</div>
+          </div>
+          <div class="contacts-block__docum">
+            <ul class="list-reset">
+              <li>
+                <h4>ORGANIZATION IE</h4>
+                <p>Plyshevskij Alexander Sergeevich</p>
+              </li>
+              <li>
+                <h4>INN / PSRN</h4>
+                <p>025551261000 / 316028000097627</p>
+              </li>
+              <li>
+                <h4>ACCOUNT NUMBER</h4>
+                <p>4080 2810 1060 0001 3713</p>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts-block__where">
+            <ul class="list-reset">
+              <li>
+                <h4>BANK ADDRESS</h4>
+                <p>Bashkirskoe otdelenie №8598 PAO Sberbank g. Ufa</p>
+              </li>
+              <li>
+                <h4>REGISTERED OFFICE</h4>
+                <p>52027, Russian Federation, Republic of Bashkortostan, Belebeevsky district, Annovka village, Molodezhnaja str., 6</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </header>
+  <!-- FIXME перенести footer в компонент VUE -->
   <footer>
     <div class="footer">
       <div class="container header__container">
@@ -169,8 +207,12 @@
         /></a>
         <nav class="nav">
           <ul class="nav__list list-reset">
-            <li class="nav__item"><a href="" class="nav__link nav-color--footer">Privacy Policy</a></li>
-            <li class="nav__item"><a href="" class="nav__link nav-color--footer">User Agreement</a></li>
+            <li class="nav__item">
+              <a href="" class="nav__link nav-color--footer">Privacy Policy</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link nav-color--footer">User Agreement</a>
+            </li>
           </ul>
         </nav>
         <div class="btns">
