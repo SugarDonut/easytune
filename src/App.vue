@@ -4,19 +4,19 @@
       <a class="header__logo" href="#"
         ><img src="./img/logo.svg" alt="Easytune logo"
       /></a>
-      <!-- <nav class="nav">
+      <nav class="nav">
         <ul class="nav__list list-reset">
-          <li class="nav__item"><a href="" class="nav__link nav-color--header">Tuning</a></li>
-          <li class="nav__item"><a href="" class="nav__link nav-color--header">History</a></li>
-          <li class="nav__item"><a href="" class="nav__link nav-color--header">Payment</a></li>
+          <li class="nav__item header__item"><a href="" class="nav__link nav-color--header">Tuning</a></li>
+          <li class="nav__item header__item"><a href="" class="nav__link nav-color--header">History</a></li>
+          <li class="nav__item header__item"><a href="" class="nav__link nav-color--header">Payment</a></li>
         </ul>
-      </nav> -->
+      </nav>
       <div class="btns">
-        <button class="btns__btn btn-reset btn--main btns__btn--ingradient">
+        <button class="btn btns__btn btn-reset  btn--main btns__btn--ingradient">
           Login
         </button>
         <a href=""></a>
-        <button class="btns__btn btn-reset btn--main btns__btn--outgradient">
+        <button class="btn btns__btn btn-reset  btn--main btns__btn--outgradient">
           Registration
         </button>
         <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
@@ -31,12 +31,12 @@
             <p class="tune__left--descr">Boost your car's engine power</p>
             <div class="btns">
               <button
-                class="btns__btn btn-reset btn--main btns__btn--ingradient"
+                class="btn btns__btn btn-reset btn--main btns__btn--ingradient"
               >
                 Login
               </button>
               <button
-                class="btns__btn btn-reset btn--main btns__btn--outgradient"
+                class="btn btns__btn btn-reset btn--main btns__btn--outgradient"
               >
                 Registration
               </button>
@@ -166,10 +166,10 @@
         <div class="contacts-block">
           <div class="contacts-block__mail">
             <h2 class="title">Our contacts</h2>
-            <div class="contacts-block__field white-block">
+            <a href="mailto:support@onlinecarservice.ru" class="contacts-block__field white-block">
               <h5>e-mail</h5>
               <span>support@onlinecarservice.ru</span>
-            </div>
+            </a>
           </div>
           <div class="contacts-block__docum">
             <ul class="contacts-block__nav list-reset">
@@ -196,14 +196,14 @@
               <li class="contacts-block__list">
                 <h4 class="contacts-block__title">BANK ADDRESS</h4>
                 <p class="contacts-block__subtitle">
-                  Bashkirskoe otdelenie №8598 PAO Sberbank g. Ufa
+                  Bashkirskoe otdelenie №8598 PAO Sberbank<br> g. Ufa
                 </p>
               </li>
               <li class="contacts-block__list">
                 <h4 class="contacts-block__title">REGISTERED OFFICE</h4>
                 <p class="contacts-block__subtitle">
-                  52027, Russian Federation, Republic of Bashkortostan,
-                  Belebeevsky district, Annovka village, Molodezhnaja str., 6
+                  52027, Russian Federation, Republic of<br> Bashkortostan,
+                  Belebeevsky district,<br> Annovka village, Molodezhnaja str., 6
                 </p>
               </li>
             </ul>
@@ -219,12 +219,12 @@
         <a class="header__logo" href="#"
           ><img src="./img/logo.svg" alt="Easytune logo"
         /></a>
-        <nav class="nav">
+        <nav class="nav footer__nav">
           <ul class="nav__list list-reset">
-            <li class="nav__item">
+            <li class="nav__item footer__item">
               <a href="" class="nav__link nav-color--footer">Privacy Policy</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item footer__item">
               <a href="" class="nav__link nav-color--footer">User Agreement</a>
             </li>
           </ul>

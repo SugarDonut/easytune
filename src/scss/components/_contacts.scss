@@ -2,11 +2,10 @@
   padding-top: 93px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
   justify-items: center;
 
   &__list {
-    width: 322px;
+    // width: 322px;
     &:not(:last-child) {
       margin-bottom: 45px;
     }
@@ -17,8 +16,8 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.03em;
-    color: #bfbfbf;
-    margin-bottom: 54px;
+    color: var(--color-silver);
+    margin-bottom: 12px;
   }
 
   &__subtitle {
@@ -29,11 +28,17 @@
   }
 
   &__docum {
-    width: 239px;
+    padding-top: 10px;
+    // width: 239px;
   }
 
   &__mail {
     justify-self: start;
+
+    .title {
+      margin-bottom: 57px;
+      
+    }
 
     h5 {
       font-weight: 500;
@@ -48,17 +53,17 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 23px;
-      color: #7c7c7c;
+      color: var(--color-boulder);
     }
   }
 
   &__field {
-    @include flex-cl;
-    justify-content: center;
-    padding-left: 80px;
+    @include flex-cl-с;
+    padding-left: 92px;
     background-image: url(./img/mail.svg);
     background-repeat: no-repeat;
     background-position: center left 23px;
+    background-size: 50px 50px;
     width: 342px;
     height: 84px;
     border-radius: 18px;
@@ -66,5 +71,11 @@
     -moz-border-radius: 18px;
     -ms-border-radius: 18px;
     -o-border-radius: 18px;
+
+        // &:hover {
+        //   background: linear-gradient(90deg, #4DADD8 18%, #81E9C0 100%);
+        // }
+
+
   }
 }

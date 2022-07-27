@@ -2,4 +2,16 @@
   margin-top: 100px;
   padding: 48px 0;
   background-color: #f6f6f6;
+
+  &__nav {
+    margin-left: -214px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 43px;
+    }
+  }
 }
+
+

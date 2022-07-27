@@ -1,5 +1,4 @@
 .chip-tuning {
-
   &__block {
     @include flex-sb;
     margin-bottom: 121px;
@@ -28,7 +27,7 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 27px;
-  color: #7c7c7c;
+  color: var(--color-boulder);
 }
 .chip-block {
   // .chip-block_mother

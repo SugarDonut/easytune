@@ -44,14 +44,14 @@
         font-size: 22px;
         line-height: 28px;
         text-transform: uppercase;
-        color: #212121;
+        color: var(--color-shaft);
       }
 
       &__subtitle {
         font-weight: 400;
         font-size: 13px;
         line-height: 27px;
-        color: #7c7c7c;
+        color: var(--color-boulder);
       }
 
       &__img {
@@ -67,7 +67,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 23px;
-    color: #7c7c7c;
+    color: var(--color-boulder);
   }
 
   // .advantages-block__list
@@ -116,7 +116,7 @@
   }
 
   &--two {
-    background-color: #fff;
+    background-color: var(--color-white);
     span {
       color: rgba(56, 92, 232, 0.2);
     }
