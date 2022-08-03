@@ -4,6 +4,7 @@
   &__btn {
     padding: 10px;
     width: 160px;
+    border-radius: 10px;
 
     &:not(:last-child) {
       background-origin: border-box;
@@ -11,7 +12,7 @@
     }
 
     &--ingradient {
-      color: var(--color-white); //FIXME
+      color: var(--color-white);
   
     }
 
@@ -41,11 +42,75 @@
   &--main {
     background-origin: border-box;
     border: solid 1px transparent;
-    border-radius: 10px;
     background-image: linear-gradient(
       90deg,
       var(--grad-Shakespeare) 18%,
       var(--grad-Riptide) 100%
     );
   }
+
 }
+
+//XXX Код ниже для реализации наведения кнопок, пока думаем 
+
+
+
+// .btns {
+//   @include flex-ali-center;
+
+//   &__btn {
+//     padding: 10px;
+//     width: 160px;
+//     border-radius: 10px;
+
+//     &:not(:last-child) {
+
+//       margin-right: 23px;
+//     }
+
+//     &--ingradient {
+//       color: var(--color-white);
+      
+  
+//     }
+
+//     &--outgradient {
+//       color: var(--color-white);
+      
+//     }
+
+//   }
+
+//   &__log-out {
+//     margin: 0;
+//     padding: 0;
+//     min-width: 70px;
+
+//     &:hover {
+//       color: var(--color-pastel);
+//     }
+//   }
+// }
+
+// .btn {
+//   font-weight: 600;
+//   font-size: 14px;
+//   line-height: 17px;
+//   text-align: center;
+
+//   &--main {
+//     background-origin: border-box;
+//     border: solid 1px transparent;
+//     background-image: linear-gradient(
+//       90deg,
+//       var(--grad-Shakespeare) 18%,
+//       var(--grad-Riptide) 100%
+//     );
+//   }
+
+//   &:hover{
+//     color:inherit;
+//     box-shadow: 2px 1000px 1px #fff inset;
+//   }
+// }
+
