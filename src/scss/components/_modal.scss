@@ -10,7 +10,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1;
-  display: none;
+  // display: none;
 
   &__container {
     @include flex-all-cl-с;
@@ -53,6 +53,10 @@
     color: var(--color-boulder);
     margin-bottom: 20px;
     text-align: center;
+  }
+
+  &__field{
+    margin-bottom: 20px;
   }
 }
 

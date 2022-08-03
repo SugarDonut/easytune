@@ -9,6 +9,9 @@
       <label class="modal__field form-field"  for="">
         <input class="form-field__input" type="text" name="" id="" placeholder="E-mail">
       </label>
+       <button class="modal__btn btn btn-reset btn--main btns__btn--ingradient">
+            Register
+          </button>
     </div>
   </section>
 </template>

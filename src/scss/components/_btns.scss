@@ -2,9 +2,6 @@
   @include flex-ali-center;
 
   &__btn {
-    padding: 10px;
-    width: 160px;
-    border-radius: 10px;
 
     &:not(:last-child) {
       background-origin: border-box;
@@ -37,7 +34,10 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
+  text-align: center; 
+  padding: 10px;
+  min-width: 160px;
+  border-radius: 10px;
 
   &--main {
     background-origin: border-box;
