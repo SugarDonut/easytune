@@ -1,22 +1,30 @@
 <template>
-  <header class="header header--main">
+<header class="header header--main">
     <div class="container header__container">
       <a class="header__logo" href="#"
         ><img src="./img/logo.svg" alt="Easytune logo"
       /></a>
       <nav class="nav">
         <ul class="nav__list list-reset">
-          <li class="nav__item header__item"><a href="" class="nav__link nav-color--header">Tuning</a></li>
-          <li class="nav__item header__item"><a href="" class="nav__link nav-color--header">History</a></li>
-          <li class="nav__item header__item"><a href="" class="nav__link nav-color--header">Payment</a></li>
+          <li class="nav__item header__item">
+            <a href="" class="nav__link nav-color--header">Tuning</a>
+          </li>
+          <li class="nav__item header__item">
+            <a href="" class="nav__link nav-color--header">History</a>
+          </li>
+          <li class="nav__item header__item">
+            <a href="" class="nav__link nav-color--header">Payment</a>
+          </li>
         </ul>
       </nav>
       <div class="btns">
-        <button class="btn btns__btn btn-reset  btn--main btns__btn--ingradient">
+        <button class="btn btns__btn btn-reset btn--main btns__btn--ingradient">
           Login
         </button>
         <a href=""></a>
-        <button class="btn btns__btn btn-reset  btn--main btns__btn--outgradient">
+        <button
+          class="btn btns__btn btn-reset btn--main btns__btn--outgradient"
+        >
           Registration
         </button>
         <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
@@ -50,8 +58,7 @@
             <div class="tune__right--sb white-block">
               <p>Energy booster</p>
               <img src="./img/img-engine-boost.svg" alt="" />
-            </div>
-          </div>
+            </div>          </div>
         </div>
       </div>
     </section>
@@ -166,7 +173,10 @@
         <div class="contacts-block">
           <div class="contacts-block__mail">
             <h2 class="title">Our contacts</h2>
-            <a href="mailto:support@onlinecarservice.ru" class="contacts-block__field white-block">
+            <a
+              href="mailto:support@onlinecarservice.ru"
+              class="contacts-block__field white-block"
+            >
               <h5>e-mail</h5>
               <span>support@onlinecarservice.ru</span>
             </a>
@@ -196,14 +206,16 @@
               <li class="contacts-block__list">
                 <h4 class="contacts-block__title">BANK ADDRESS</h4>
                 <p class="contacts-block__subtitle">
-                  Bashkirskoe otdelenie №8598 PAO Sberbank<br> g. Ufa
+                  Bashkirskoe otdelenie №8598 PAO Sberbank<br />
+                  g. Ufa
                 </p>
               </li>
               <li class="contacts-block__list">
                 <h4 class="contacts-block__title">REGISTERED OFFICE</h4>
                 <p class="contacts-block__subtitle">
-                  52027, Russian Federation, Republic of<br> Bashkortostan,
-                  Belebeevsky district,<br> Annovka village, Molodezhnaja str., 6
+                  52027, Russian Federation, Republic of<br />
+                  Bashkortostan, Belebeevsky district,<br />
+                  Annovka village, Molodezhnaja str., 6
                 </p>
               </li>
             </ul>
@@ -242,12 +254,15 @@
       </div>
     </div>
   </footer>
+  <Modal-box/>
 </template>
 
 <script>
+import ModalBox from '@/Modal-box.vue';
+
 export default {
   name: "header",
-  components: {},
+  components: {ModalBox},
 };
 </script>
 

@@ -33,3 +33,10 @@
     flex-direction: column;
     justify-content: center;
 }
+
+@mixin flex-all-cl-с{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
