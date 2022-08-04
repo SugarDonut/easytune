@@ -29,6 +29,7 @@
 
 /* Компоненты страниц */
 
+
 @import "./components/header";
 @import "./components/nav";
 @import "./components/btns";
@@ -39,5 +40,9 @@
 @import "./components/contacts";
 @import "./components/footer";
 @import "./components/modal";
+
+
+/* Отдельные страниц */
+@import "./components/pattern";
 
 

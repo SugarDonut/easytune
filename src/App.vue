@@ -28,6 +28,7 @@
         <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
       </div>
     </div>
+    <!-- <Pattern/> -->
     <section class="tune">
       <div class="container tune__bg">
         <div class="tune__content">
@@ -70,11 +71,11 @@
             </p>
           </div>
           <div class="chip-tuning__boost">
-            <div class="chip-block chip-block_mother white-block">
+            <div class="chip-block chip-block__mother white-block">
               <img src="./img/chip.png" alt="" />
               <p>Increasing engine power</p>
             </div>
-            <div class="chip-block chip-block_speed white-block">
+            <div class="chip-block chip-block__speed white-block">
               <img src="./img/speed.png" alt="" />
               <p>
                 Increasing <br />
@@ -258,10 +259,11 @@
 
 <script>
 import ModalBox from "@/Modal-box.vue";
+import Pattern from "@/Pattern";
 
 export default {
   name: "header",
-  components: { ModalBox },
+  components: { ModalBox, Pattern },
 };
 </script>
 
