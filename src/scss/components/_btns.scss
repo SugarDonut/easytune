@@ -1,3 +1,35 @@
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center; 
+  padding: 10px;
+  min-width: 160px;
+  border-radius: 10px;
+  color: var(--color-shaft);
+
+  &--main {
+    background-origin: border-box;
+    border: solid 1px transparent;
+    background-image: linear-gradient(
+      90deg,
+      var(--grad-Shakespeare) 18%,
+      var(--grad-Riptide) 100%
+    );
+  }
+
+  &--ingradient {
+    color: var(--color-white);
+
+  }
+
+  &--outgradient {
+    color: var(--color-shaft);
+    box-shadow: 2px 1000px 1px #fff inset;
+  }
+}
+
+
 .btns {
   @include flex-ali-center;
 
@@ -6,16 +38,6 @@
     &:not(:last-child) {
       background-origin: border-box;
       margin-right: 23px;
-    }
-
-    &--ingradient {
-      color: var(--color-white);
-  
-    }
-
-    &--outgradient {
-      color: var(--color-shaft);
-      box-shadow: 2px 1000px 1px #fff inset;
     }
   }
 
@@ -30,26 +52,6 @@
   }
 }
 
-.btn {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center; 
-  padding: 10px;
-  min-width: 160px;
-  border-radius: 10px;
-
-  &--main {
-    background-origin: border-box;
-    border: solid 1px transparent;
-    background-image: linear-gradient(
-      90deg,
-      var(--grad-Shakespeare) 18%,
-      var(--grad-Riptide) 100%
-    );
-  }
-
-}
 
 //XXX Код ниже для реализации наведения кнопок, пока думаем 
 

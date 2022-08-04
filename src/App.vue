@@ -1,30 +1,28 @@
 <template>
-<header class="header header--main">
+  <header class="header header--main">
     <div class="container header__container">
       <a class="header__logo" href="#"
         ><img src="./img/logo.svg" alt="Easytune logo"
       /></a>
       <nav class="nav">
         <ul class="nav__list list-reset">
-          <li class="nav__item header__item">
+          <li class="nav__item header__item nav-color">
             <a href="" class="nav__link nav-color--header">Tuning</a>
           </li>
-          <li class="nav__item header__item">
+          <li class="nav__item header__item nav-color">
             <a href="" class="nav__link nav-color--header">History</a>
           </li>
-          <li class="nav__item header__item">
+          <li class="nav__item header__item nav-color">
             <a href="" class="nav__link nav-color--header">Payment</a>
           </li>
         </ul>
       </nav>
       <div class="btns">
-        <button class="btn btns__btn btn-reset btn--main btns__btn--ingradient">
+        <button class="btn btns__btn btn-reset btn--main btn--ingradient">
           Login
         </button>
         <a href=""></a>
-        <button
-          class="btn btns__btn btn-reset btn--main btns__btn--outgradient"
-        >
+        <button class="btn btns__btn btn-reset btn--main btn--outgradient">
           Registration
         </button>
         <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
@@ -38,13 +36,11 @@
             <h1 class="tune__left--main-title">Chip tuning for all vehicles</h1>
             <p class="tune__left--descr">Boost your car's engine power</p>
             <div class="btns">
-              <button
-                class="btn btns__btn btn-reset btn--main btns__btn--ingradient"
-              >
+              <button class="btn btns__btn btn-reset btn--main btn--ingradient">
                 Login
               </button>
               <button
-                class="btn btns__btn btn-reset btn--main btns__btn--outgradient"
+                class="btn btns__btn btn-reset btn--main btn--outgradient"
               >
                 Registration
               </button>
@@ -58,7 +54,8 @@
             <div class="tune__right--sb white-block">
               <p>Energy booster</p>
               <img src="./img/img-engine-boost.svg" alt="" />
-            </div>          </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -242,11 +239,11 @@
           </ul>
         </nav>
         <div class="btns">
-          <button class="btns__btn btn-reset btn--main btns__btn--ingradient">
+          <button class="btn btns__btn btn-reset btn--main btn--ingradient">
             Login
           </button>
           <a href=""></a>
-          <button class="btns__btn btn-reset btn--main btns__btn--outgradient">
+          <button class="btn btns__btn btn-reset btn--main btn--outgradient">
             Registration
           </button>
           <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
@@ -254,15 +251,15 @@
       </div>
     </div>
   </footer>
-  <Modal-box/>
+  <Modal-box />
 </template>
 
 <script>
-import ModalBox from '@/Modal-box.vue';
+import ModalBox from "@/Modal-box.vue";
 
 export default {
   name: "header",
-  components: {ModalBox},
+  components: { ModalBox },
 };
 </script>
 

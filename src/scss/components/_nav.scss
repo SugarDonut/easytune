@@ -9,19 +9,19 @@
     line-height: 25px;
     letter-spacing: 0.03em;
     color: var(--color-shaft);
-
-    &:hover {
-      color: var(--color-pastel);
-      transition: 0.4s ease-out;
-      -webkit-transition: 0.4s ease-out;
-      -moz-transition: 0.4s ease-out;
-      -ms-transition: 0.4s ease-out;
-      -o-transition: 0.4s ease-out;
-    }
   }
 }
 
 .nav-color {
+  &:hover {
+    color: var(--color-pastel);
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+  }
+
   &--header {
     color: var(----color-shaft);
   }
