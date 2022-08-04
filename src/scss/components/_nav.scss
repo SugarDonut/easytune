@@ -21,16 +21,4 @@
     -ms-transition: 0.2s ease-out;
     -o-transition: 0.2s ease-out;
   }
-
-  &--header {
-    color: var(----color-shaft);
-  }
-
-  &--footer {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 25px;
-    letter-spacing: 0.04em;
-    color: var(--color-boulder);
-  }
 }

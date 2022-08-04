@@ -6,14 +6,14 @@
       /></a>
       <nav class="nav">
         <ul class="nav__list list-reset">
-          <li class="nav__item header__item nav-color">
-            <a href="" class="nav__link nav-color--header">Tuning</a>
+          <li class="nav__item header__item">
+            <a href="" class="nav__link nav-color">Tuning</a>
           </li>
-          <li class="nav__item header__item nav-color">
-            <a href="" class="nav__link nav-color--header">History</a>
+          <li class="nav__item header__item">
+            <a href="" class="nav__link nav-color">History</a>
           </li>
-          <li class="nav__item header__item nav-color">
-            <a href="" class="nav__link nav-color--header">Payment</a>
+          <li class="nav__item header__item">
+            <a href="" class="nav__link nav-color">Payment</a>
           </li>
         </ul>
       </nav>
@@ -231,13 +231,16 @@
         <nav class="nav footer__nav">
           <ul class="nav__list list-reset">
             <li class="nav__item footer__item">
-              <a href="" class="nav__link nav-color--footer">Privacy Policy</a>
+              <a href="" class="footer__link nav__link nav-color"
+                >Privacy Policy</a
+              >
             </li>
             <li class="nav__item footer__item">
-              <a href="" class="nav__link nav-color--footer">User Agreement</a>
+              <a href="" class="nav__link nav-color">User Agreement</a>
             </li>
           </ul>
         </nav>
+
         <div class="btns">
           <button class="btn btns__btn btn-reset btn--main btn--ingradient">
             Login
@@ -246,7 +249,6 @@
           <button class="btn btns__btn btn-reset btn--main btn--outgradient">
             Registration
           </button>
-          <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
         </div>
       </div>
     </div>

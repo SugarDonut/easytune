@@ -8,10 +8,21 @@
   }
 
   &__item {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: var(--color-boulder);
     &:not(:last-child) {
       margin-right: 43px;
     }
   }
+
+  &__link{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: var(--color-boulder);
+  }
 }
-
-
