@@ -2,7 +2,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  text-align: center; 
+  text-align: center;
   padding: 10px;
   min-width: 160px;
   border-radius: 10px;
@@ -16,11 +16,17 @@
       var(--grad-Shakespeare) 18%,
       var(--grad-Riptide) 100%
     );
+    background-size: 200% 100%;
+    background-position: 80% 0;
+    transition: background-position 0.9s;
+
+    &:hover {
+      background-position: 0 0;
+    }
   }
 
   &--ingradient {
     color: var(--color-white);
-
   }
 
   &--outgradient {
@@ -29,12 +35,10 @@
   }
 }
 
-
 .btns {
   @include flex-ali-center;
 
   &__btn {
-
     &:not(:last-child) {
       background-origin: border-box;
       margin-right: 23px;
@@ -44,7 +48,7 @@
   &__log-out {
     margin: 0;
     padding: 0;
-    min-width: 70px;
+    min-width: 49px;
 
     &:hover {
       color: var(--color-pastel);
@@ -52,10 +56,7 @@
   }
 }
 
-
-//XXX Код ниже для реализации наведения кнопок, пока думаем 
-
-
+//XXX Код ниже для реализации наведения кнопок, пока думаем
 
 // .btns {
 //   @include flex-ali-center;
@@ -72,13 +73,12 @@
 
 //     &--ingradient {
 //       color: var(--color-white);
-      
-  
+
 //     }
 
 //     &--outgradient {
 //       color: var(--color-white);
-      
+
 //     }
 
 //   }
@@ -115,4 +115,3 @@
 //     box-shadow: 2px 1000px 1px #fff inset;
 //   }
 // }
-

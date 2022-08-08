@@ -1,0 +1,26 @@
+<template>
+  <section class="payment background--grad">
+    <div class="container pay__bg">
+      <div class="pay__content">
+        <div class="pay__balance">
+          <h3 class="pay__title">your balance</h3>
+          <span class="pay__count">$100</span>
+        </div>
+        <div class="pay__doll">
+          <label for="">
+            <input class="pay__input" type="text" name="" id="" />
+          </label>
+          <button class="btn btn--main pay__btn">Top up balance</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "Pay",
+};
+</script>
+
+<style lang="scss"></style>

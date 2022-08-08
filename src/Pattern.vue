@@ -1,6 +1,6 @@
 <template>
       <section class="tune">
-      <div class="container pay__bg">
+      <div class="container pattern__bg">
         <div class="tune__content">
           <div class="tune__left">
             <span class="tune__left--slogan">tune it fast</span>

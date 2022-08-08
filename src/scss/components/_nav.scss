@@ -1,4 +1,5 @@
 .nav {
+
   &__list {
     @include flex;
   }
@@ -9,28 +10,16 @@
     line-height: 25px;
     letter-spacing: 0.03em;
     color: var(--color-shaft);
-
-    &:hover {
-      color: var(--color-pastel);
-      transition: 0.4s ease-out;
-      -webkit-transition: 0.4s ease-out;
-      -moz-transition: 0.4s ease-out;
-      -ms-transition: 0.4s ease-out;
-      -o-transition: 0.4s ease-out;
-    }
   }
 }
 
 .nav-color {
-  &--header {
-    color: var(----color-shaft);
-  }
-
-  &--footer {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 25px;
-    letter-spacing: 0.04em;
-    color: var(--color-boulder);
-  }
+  &:hover {
+    color: var(--color-pastel);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
 }

@@ -1,5 +1,5 @@
 <template>
-  <header class="header header--main">
+  <header class="header background--grad">
     <div class="container header__container">
       <a class="header__logo" href="#"
         ><img src="./img/logo.svg" alt="Easytune logo"
@@ -28,6 +28,7 @@
         <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
       </div>
     </div>
+    <!-- <Pay /> -->
     <!-- <Pattern/> -->
     <section class="tune">
       <div class="container tune__bg">
@@ -237,7 +238,9 @@
               >
             </li>
             <li class="nav__item footer__item">
-              <a href="" class="nav__link nav-color">User Agreement</a>
+              <a href="" class="footer__link nav__link nav-color"
+                >User Agreement</a
+              >
             </li>
           </ul>
         </nav>
@@ -260,10 +263,15 @@
 <script>
 import ModalBox from "@/Modal-box.vue";
 import Pattern from "@/Pattern";
+import Pay from "@/Pay";
 
 export default {
   name: "header",
-  components: { ModalBox, Pattern },
+  components: {
+    ModalBox,
+    Pattern,
+    Pay,
+  },
 };
 </script>
 

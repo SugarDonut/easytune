@@ -3,11 +3,17 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-pastel: #65db9c;
-  --color-boulder:#7c7c7c;
-  --color-silver:#bfbfbf;
-  --grad-Shakespeare:#4DADD8;
-  --grad-Riptide:#81E9C0;
-
-
+  --color-boulder: #7c7c7c;
+  --color-silver: #bfbfbf;
+  --grad-Shakespeare: #4dadd8;
+  --grad-Riptide: #81e9c0;
 }
 
+$grid-breakpoints: (
+  mobile: 576px,
+  minitablet: 576px,
+  tablet: 1024px,
+  desktop: 1025px,
+  minidesk: 1200px,
+  middledesk: 1440px,
+) !default;

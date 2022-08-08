@@ -1,0 +1,73 @@
+.pay {
+  &__content {
+    @include flex;
+    justify-content: center;
+    padding: 128px 0;
+  }
+
+  &__bg {
+    background-image: url(./img/pay-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &__balance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    min-width: 342px;
+    height: 203px;
+    margin-right: 45px;
+    background-image: url(./img/background-pay.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 21px;
+  }
+
+  &__count {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__doll {
+    @include flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 471px;
+    height: 203px;
+    background-color: #fff;
+    border-radius: 18px;
+
+    &::before{
+      content: url(./img/dollar.svg);
+    }
+  }
+
+  &__input{
+    margin:0 5px;
+    border: none;
+    border-bottom: 0.5px solid #D3D7DB;
+    height: 30px;
+  }
+
+  &__btn {
+    color: #fff;
+  }
+}
