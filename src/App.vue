@@ -28,6 +28,7 @@
         <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
       </div>
     </div>
+    <Tuning/>
     <!-- <Pay /> -->
     <!-- <Pattern/> -->
     <section class="tune">
@@ -264,6 +265,7 @@
 import ModalBox from "@/Modal-box.vue";
 import Pattern from "@/Pattern";
 import Pay from "@/Pay";
+import Tuning from "@/Tuning.vue"
 
 export default {
   name: "header",
@@ -271,6 +273,7 @@ export default {
     ModalBox,
     Pattern,
     Pay,
+    Tuning
   },
 };
 </script>
