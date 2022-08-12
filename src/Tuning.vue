@@ -43,6 +43,74 @@
               FD001</span
             >
           </div>
+          <table class="choce__table table">
+            <thead class="table__head">
+              <tr class="table__row">
+                <th class="table__column">
+                  <label for="">
+                    <input class="table__check" id="check1" type="checkbox" name="" />
+                  </label>
+                </th>
+                <th class="table__column">N</th>
+                <th class="table__column">ECU modification</th>
+                <th class="table__column">Price</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <th class="table__column">
+                  <label for="">
+                    <input  class="table__check" type="checkbox" name="" id="" />
+                  </label>
+                </th>
+                <th class="table__column">1</th>
+                <th class="table__column">
+                  <h3 class="table__title">tun</h3>
+                  <p class="table__desc">Stage1</p>
+                </th>
+                <th class="table__column">$1 000</th>
+              </tr>
+               <tr class="table__row">
+                <th class="table__column">
+                  <label for="">
+                    <input class="table__check" type="checkbox" name="" id="" />
+                  </label>
+                </th>
+                <th class="table__column">1</th>
+                <th class="table__column">
+                  <h3 class="table__title">tun</h3>
+                  <p class="table__desc">Stage1</p>
+                </th>
+                <th class="table__column">$1 000</th>
+              </tr>
+               <tr class="table__row">
+                <th class="table__column">
+                  <label for="">
+                    <input class="table__check" type="checkbox" name="" id="" />
+                  </label>
+                </th>
+                <th class="table__column">1</th>
+                <th class="table__column">
+                  <h3 class="table__title">tun</h3>
+                  <p class="table__desc">Stage1</p>
+                </th>
+                <th class="table__column">$1 000</th>
+              </tr>
+               <tr class="table__row">
+                <th class="table__column">
+                  <label for="">
+                    <input class="table__check" type="checkbox" name="" id="" />
+                  </label>
+                </th>
+                <th class="table__column">1</th>
+                <th class="table__column">
+                  <h3 class="table__title">tun</h3>
+                  <p class="table__desc">Stage1</p>
+                </th>
+                <th class="table__column">$1 000</th>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
