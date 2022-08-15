@@ -3,8 +3,8 @@
     @include flex;
     justify-content: space-between;
     max-width: 974px;
-    height: 707px;
-    background: #ffffff;
+    min-height: 707px;
+    background: var(--color-white);
     box-shadow: 5.3px 4.54px 58.34px rgba(35, 35, 35, 0.11);
     border-radius: 18px;
     margin: 90px auto 0;
@@ -20,7 +20,7 @@
     font-weight: 600;
     font-size: 25px;
     line-height: 20px;
-    color: #212121;
+    color: var(--color-shaft);
     margin-bottom: 24px;
     padding-top: 32px;
   }
@@ -29,7 +29,12 @@
     box-shadow: 5.3px 4.54px 75.34px rgb(35 35 35 / 6%);
     flex-basis: 40%;
     margin-left: 56px;
-    padding-left: 33px;
+    padding: 0 33px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
   }
 
   .choice {
@@ -47,7 +52,7 @@
         font-weight: 600;
         font-size: 12px;
         line-height: 19px;
-        color: #212121;
+        color: var(--color-shaft);
         margin-right: 52px;
       }
 
@@ -57,7 +62,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 19px;
-        color: #212121;
+        color: var(--color-shaft);
       }
     }
 
@@ -67,7 +72,7 @@
         font-size: 10px;
         line-height: 19px;
         letter-spacing: 0.01em;
-        color: #212121;
+        color: var(--color-shaft);
         margin-bottom: 7px;
         margin-left: 18px;
 
@@ -101,9 +106,76 @@
         font-size: 14px;
         line-height: 19px;
         letter-spacing: 0.01em;
-        color: #212121;
+        color: var(--color-shaft);
       }
     }
+  }
+}
+
+.label-select {
+  padding: 15px 0;
+
+  &__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 9px;
+    margin-bottom: 6px;
+    color: #7c7c7c;
+  }
+
+  &__input {
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 9px;
+    color: #212121;
+    border-bottom: 0.5px solid #d3d7db;
+  }
+}
+
+.label-file {
+  position: relative;
+  display: block;
+  margin: 20px 0;
+
+  &__button {
+    position: absolute;
+    left: 0;
+    border: none;
+    background: #385ce8;
+    border-radius: 9px;
+    height: 51px;
+    width: 51px;
+    background-image: url(./img/paperclip.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+  }
+
+  &__button:hover {
+    background-color: var(--color-pastel);
+  }
+
+  &__input {
+    border: 0.5px solid #d3d7db;
+    border-radius: 9px;
+    height: 51px;
+    width: 100%;
+    padding-left: 60px;
+    margin-bottom: 10px;
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #7c7c7c;
+    margin-bottom: 30px;
   }
 }
 
@@ -113,8 +185,8 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.03em;
-  color: #ffffff;
-  background: #65db9c;
+  color: var(--color-white);
+  background: var(--color-pastel);
 
   span {
     font-weight: 500;
@@ -142,7 +214,6 @@
   border-collapse: collapse;
   width: 100%;
 
-
   &__column {
     padding: 10px 0;
     &:nth-child(2) {
@@ -168,16 +239,13 @@
     border-bottom: 1px solid;
   }
 
-  &__body {
-  }
-
   &__title {
     font-weight: 500;
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--color-shaft);
   }
 
   &__desc {
@@ -186,5 +254,50 @@
     line-height: 12px;
     letter-spacing: 0.01em;
     color: #c1c1c1;
+  }
+}
+
+.custom-checkbox {
+  &__input {
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__input + &__text::before {
+    content: "";
+    display: block;
+    border: 1px solid #999999;
+    width: 17.49px;
+    height: 17.49px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+
+  &__input:checked + &__text::before {
+    background-color: #385ce8;
+    background-image: url(./img/check.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 16px 11px;
+  }
+
+  &__input:disabled + &__text::before {
+    background-color: #999999;
+    background-image: url(./img/disabled.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 11px 5px;
+  }
+
+  &__input:not(:disabled):not(:checked):hover + &__text::before {
+    border-color: var(--grad-Shakespeare);
   }
 }

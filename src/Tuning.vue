@@ -4,6 +4,54 @@
       <div class="tuning__container">
         <div class="tuning__options option">
           <h1 class="tuning__title">Select options</h1>
+          <label class="tuning__label label-select">
+            <span class="label-select__text">Type</span>
+            <input class="label-select__input" type="text" placeholder="Car" />
+          </label>
+          <label class="tuning__label label-select">
+            <span class="label-select__text">Brand</span>
+            <input
+              class="label-select__input"
+              type="text"
+              placeholder="BMW/MINI"
+            />
+          </label>
+          <label class="tuning__label label-select">
+            <span class="label-select__text">Model</span>
+            <input
+              class="label-select__input"
+              type="text"
+              placeholder="All Models"
+            />
+          </label>
+          <label class="tuning__label label-select">
+            <span class="label-select__text">Engine</span>
+            <input
+              class="label-select__input"
+              type="text"
+              placeholder="Diesel engines"
+            />
+          </label>
+          <label class="tuning__label label-select">
+            <span class="label-select__text">Ecu</span>
+            <input
+              class="label-select__input"
+              type="text"
+              placeholder="Bosch EDC15"
+            />
+          </label>
+
+          <label class="label-file">
+            <button class="label-file__button"></button>
+            <input class="label-file__input" type="url" placeholder="BMW.bin" />
+          </label>
+          <p class="label-file__descr">
+            Extracted files ONLY<br />
+            No rar, zip, 7z or any other archives
+          </p>
+          <button class="btn btn-reset btn--main btn--ingradient">
+            Check file again
+          </button>
         </div>
         <div class="tuning__choice choice">
           <h1 class="tuning__title">Your tuning</h1>
@@ -47,8 +95,13 @@
             <thead class="table__head">
               <tr class="table__row">
                 <th class="table__column">
-                  <label for="">
-                    <input class="table__check" id="check1" type="checkbox" name="" />
+                  <label class="custom-checkbox">
+                    <input
+                      disabled="disabled"
+                      class="custom-checkbox__input"
+                      type="checkbox"
+                    />
+                    <span class="custom-checkbox__text"></span>
                   </label>
                 </th>
                 <th class="table__column">N</th>
@@ -59,8 +112,13 @@
             <tbody class="table__body">
               <tr class="table__row">
                 <th class="table__column">
-                  <label for="">
-                    <input  class="table__check" type="checkbox" name="" id="" />
+                  <label class="custom-checkbox">
+                    <input
+                      class="custom-checkbox__input"
+                      type="checkbox"
+                      name=""
+                    />
+                    <span class="custom-checkbox__text"></span>
                   </label>
                 </th>
                 <th class="table__column">1</th>
@@ -70,10 +128,15 @@
                 </th>
                 <th class="table__column">$1 000</th>
               </tr>
-               <tr class="table__row">
+              <tr class="table__row">
                 <th class="table__column">
-                  <label for="">
-                    <input class="table__check" type="checkbox" name="" id="" />
+                  <label class="custom-checkbox">
+                    <input
+                      class="custom-checkbox__input"
+                      type="checkbox"
+                      name=""
+                    />
+                    <span class="custom-checkbox__text"></span>
                   </label>
                 </th>
                 <th class="table__column">1</th>
@@ -83,10 +146,15 @@
                 </th>
                 <th class="table__column">$1 000</th>
               </tr>
-               <tr class="table__row">
+              <tr class="table__row">
                 <th class="table__column">
-                  <label for="">
-                    <input class="table__check" type="checkbox" name="" id="" />
+                  <label class="custom-checkbox">
+                    <input
+                      class="custom-checkbox__input"
+                      type="checkbox"
+                      name=""
+                    />
+                    <span class="custom-checkbox__text"></span>
                   </label>
                 </th>
                 <th class="table__column">1</th>
@@ -96,10 +164,15 @@
                 </th>
                 <th class="table__column">$1 000</th>
               </tr>
-               <tr class="table__row">
+              <tr class="table__row">
                 <th class="table__column">
-                  <label for="">
-                    <input class="table__check" type="checkbox" name="" id="" />
+                  <label class="custom-checkbox">
+                    <input
+                      class="custom-checkbox__input"
+                      type="checkbox"
+                      name=""
+                    />
+                    <span class="custom-checkbox__text"></span>
                   </label>
                 </th>
                 <th class="table__column">1</th>
