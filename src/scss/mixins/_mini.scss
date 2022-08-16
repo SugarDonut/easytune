@@ -7,6 +7,13 @@
     flex-wrap: wrap;
 }
 
+
+@mixin flex-v-center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 @mixin flex-c-sb {
     display: flex;
     align-items: center;

@@ -1,34 +1,38 @@
 <template>
-  <header class="header background--grad">
-    <div class="container header__container">
-      <a class="header__logo" href="#"
-        ><img src="./img/logo.svg" alt="Easytune logo"
-      /></a>
-      <nav class="nav">
-        <ul class="nav__list list-reset">
-          <li class="nav__item header__item">
-            <a href="" class="nav__link nav-color">Tuning</a>
-          </li>
-          <li class="nav__item header__item">
-            <a href="" class="nav__link nav-color">History</a>
-          </li>
-          <li class="nav__item header__item">
-            <a href="" class="nav__link nav-color">Payment</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="btns">
-        <button class="btn btn__spin btns__btn btn-reset btn--main btn--ingradient">
-          Login
-        </button>
-        <a href=""></a>
-        <button class="btn btns__btn btn-reset btn--main btn--outgradient">
-          Registration
-        </button>
-        <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
+  <header>
+    <section class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="#"
+          ><img src="./img/logo.svg" alt="Easytune logo"
+        /></a>
+        <nav class="nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item header__item">
+              <a href="" class="nav__link nav-color">Tuning</a>
+            </li>
+            <li class="nav__item header__item">
+              <a href="" class="nav__link nav-color">History</a>
+            </li>
+            <li class="nav__item header__item">
+              <a href="" class="nav__link nav-color">Payment</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="btns">
+          <button class="btn btns__btn btn-reset btn--main btn--ingradient">
+            Login
+          </button>
+          <a href=""></a>
+          <button class="btn btns__btn btn-reset btn--main btn--outgradient">
+            Registration
+          </button>
+          <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
+        </div>
       </div>
-    </div>
-    <Tuning/>
+    </section>
+
+    <History />
+    <Tuning />
     <!-- <Pay /> -->
     <!-- <Pattern/> -->
     <section class="tune">
@@ -265,7 +269,8 @@
 import ModalBox from "@/Modal-box.vue";
 import Pattern from "@/Pattern";
 import Pay from "@/Pay";
-import Tuning from "@/Tuning.vue"
+import Tuning from "@/Tuning.vue";
+import History from "@/History.vue";
 
 export default {
   name: "header",
@@ -273,7 +278,8 @@ export default {
     ModalBox,
     Pattern,
     Pay,
-    Tuning
+    Tuning,
+    History,
   },
 };
 </script>

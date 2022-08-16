@@ -1,4 +1,5 @@
 .btn {
+  @include flex-v-center;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -7,9 +8,7 @@
   min-width: 160px;
   border-radius: 10px;
   color: var(--color-shaft);
-  display: flex;
-  text-align: center;
-  justify-content: center;
+
 
   &--main {
     background-origin: border-box;
