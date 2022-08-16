@@ -7,6 +7,9 @@
   min-width: 160px;
   border-radius: 10px;
   color: var(--color-shaft);
+  display: flex;
+  text-align: center;
+  justify-content: center;
 
   &--main {
     background-origin: border-box;
@@ -33,6 +36,31 @@
     color: var(--color-shaft);
     box-shadow: 2px 1000px 1px #fff inset;
   }
+
+  &__spin > img {
+    left: 10px;
+    vertical-align: baseline;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    animation: 0.5s infinite linear spin;
+    -webkit-animation: 0.5s infinite linear spin;
+    width: 21px;
+  
+    &__spin:hover > img {
+      @keyframes spin {
+        100% {
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+        }
+      }
+    }
+  }
 }
 
 .btns {
@@ -55,6 +83,8 @@
     }
   }
 }
+
+
 
 //XXX Код ниже для реализации наведения кнопок, пока думаем
 

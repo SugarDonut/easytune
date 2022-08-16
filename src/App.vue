@@ -18,7 +18,7 @@
         </ul>
       </nav>
       <div class="btns">
-        <button class="btn btns__btn btn-reset btn--main btn--ingradient">
+        <button class="btn btn__spin btns__btn btn-reset btn--main btn--ingradient">
           Login
         </button>
         <a href=""></a>
