@@ -47,8 +47,7 @@
   }
 
   &__doll {
-    @include flex;
-    align-items: center;
+    @include flex-c-sb;
     justify-content: center;
     min-width: 471px;
     height: 203px;

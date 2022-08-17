@@ -1,7 +1,6 @@
 .tuning {
   &__container {
-    @include flex;
-    justify-content: space-between;
+    @include flex-sb;
     max-width: 974px;
     min-height: 707px;
     background: var(--color-white);
