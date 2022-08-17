@@ -9,9 +9,17 @@
   border-radius: 10px;
   color: var(--color-shaft);
 
-  &--main {
-    background-origin: border-box;
+  & > img {
+    width: 22px;
+    height: 22px;
+    margin-right: 6px;
+  }
+
+  &--grad {
+    align-items: center;
+    color: var(--color-white);
     border: solid 1px transparent;
+    background-origin: border-box;
     background-image: linear-gradient(
       90deg,
       var(--grad-Shakespeare) 18%,
@@ -25,7 +33,7 @@
       background-position: 0 0;
     }
 
-    &:hover > img{
+    &:hover > img {
       animation: 0.5s infinite linear spin;
       animation-name: spin;
     }
@@ -40,8 +48,16 @@
     box-shadow: 2px 1000px 1px #fff inset;
   }
 
-  &--white{
+  &--white {
+    align-items: center;
     box-shadow: 4.37697px 3.74933px 32.4887px rgba(35, 35, 35, 0.14);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--color-shaft);
+    padding: 10px 40px;
   }
 
   &__spin > img {
@@ -65,7 +81,6 @@
       }
     }
   }
-  
 }
 
 .btn-small {

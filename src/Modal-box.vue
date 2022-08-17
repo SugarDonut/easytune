@@ -30,7 +30,7 @@
           <a href="#" class="modal__link  nav-color">Forgot password?</a>
         </div>
         <div class="modal__btns">
-          <button class="btn btns__btn btn-reset btn--main btn--ingradient">
+          <button class="btn btns__btn btn-reset btn--grad btn--ingradient">
             Login
           </button>
         </div>

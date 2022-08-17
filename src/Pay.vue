@@ -10,7 +10,7 @@
           <label for="">
             <input class="pay__input" type="text" name="" id="" />
           </label>
-          <button class="btn btn--main pay__btn">Top up balance</button>
+          <button class="btn btn--grad pay__btn">Top up balance</button>
         </div>
       </div>
     </div>

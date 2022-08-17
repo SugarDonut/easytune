@@ -49,7 +49,7 @@
             Extracted files ONLY<br />
             No rar, zip, 7z or any other archives
           </p>
-          <button class="btn btn__spin btn-reset btn--main btn--ingradient">
+          <button class="btn btn__spin btn-reset btn--grad btn--ingradient">
             <img src="./img/spin.svg" alt="">
             Check file again
           </button>

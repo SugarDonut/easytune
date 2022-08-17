@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="bg--grad">
     <section class="header">
       <div class="container header__container">
         <a class="header__logo" href="#"
@@ -19,29 +19,30 @@
           </ul>
         </nav>
         <div class="btns">
-          <button class="btn btns__btn btn-reset btn--main btn--ingradient">
+          <button class="btn btns__btn btn-reset btn--grad btn--ingradient">
             Login
           </button>
-          <a href=""></a>
-          <button class="btn btns__btn btn-reset btn--main btn--outgradient">
+          <button class="btn btns__btn btn-reset btn--grad btn--outgradient">
             Registration
           </button>
-          <button class="btn btns__btn btn-reset ">
+          <!-- <button class="btn btns__btn btn-reset btn--grad ">
+            <img src="./img/btn-doll.svg" alt="">
             Balance: $100
           </button>
           <button class="btn btns__btn btn-reset btn--white">
+            <img src="./img/btn-profile.svg" alt="">
             User@email.com
           </button>
-          <a class="btns__log-out nav__link" href="">log out</a>
+          <a class="btns__log-out nav__link" href="">log out</a> -->
         </div>
       </div>
     </section>
 
     <!-- <History /> -->
-    <Tuning />
+    <!-- <Tuning /> -->
     <!-- <Pay /> -->
     <!-- <Pattern /> -->
-    <section class="tune">
+    <section class="tune ">
       <div class="container tune__bg">
         <div class="tune__content">
           <div class="tune__left">
@@ -49,11 +50,11 @@
             <h1 class="tune__left--main-title">Chip tuning for all vehicles</h1>
             <p class="tune__left--descr">Boost your car's engine power</p>
             <div class="btns">
-              <button class="btn btns__btn btn-reset btn--main btn--ingradient">
+              <button class="btn btns__btn btn-reset btn--grad btn--ingradient">
                 Login
               </button>
               <button
-                class="btn btns__btn btn-reset btn--main btn--outgradient"
+                class="btn btns__btn btn-reset btn--grad btn--outgradient"
               >
                 Registration
               </button>
@@ -257,11 +258,11 @@
         </nav>
 
         <div class="btns">
-          <button class="btn btns__btn btn-reset btn--main btn--ingradient">
+          <button class="btn btns__btn btn-reset btn--grad btn--ingradient">
             Login
           </button>
           <a href=""></a>
-          <button class="btn btns__btn btn-reset btn--main btn--outgradient">
+          <button class="btn btns__btn btn-reset btn--grad btn--outgradient">
             Registration
           </button>
         </div>
