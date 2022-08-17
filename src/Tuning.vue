@@ -1,5 +1,5 @@
 <template>
-  <section class="tuning background--grad tuning__bg">
+  <section class="tuning bg--grad tuning__bg">
     <div class="container">
       <div class="tuning__container">
         <div class="tuning__options option">
@@ -50,7 +50,7 @@
             No rar, zip, 7z or any other archives
           </p>
           <button class="btn btn__spin btn-reset btn--main btn--ingradient">
-            <!-- <img src="./img/spin.svg" alt=""> -->
+            <img src="./img/spin.svg" alt="">
             Check file again
           </button>
         </div>

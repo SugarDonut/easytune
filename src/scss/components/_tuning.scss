@@ -131,6 +131,7 @@
     color: var(--color-shaft);
     border-bottom: 0.5px solid #d3d7db;
     width: 100%;
+    padding-bottom: 5px;
   }
 }
 
@@ -138,7 +139,7 @@
 .label-file {
   position: relative;
   display: block;
-  margin: 20px 0;
+  margin-top: 20px;
 
   &__button {
     position: absolute;
@@ -303,3 +304,5 @@
     border-color: var(--grad-Shakespeare);
   }
 }
+
+

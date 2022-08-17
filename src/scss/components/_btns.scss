@@ -9,7 +9,6 @@
   border-radius: 10px;
   color: var(--color-shaft);
 
-
   &--main {
     background-origin: border-box;
     border: solid 1px transparent;
@@ -25,6 +24,11 @@
     &:hover {
       background-position: 0 0;
     }
+
+    &:hover > img{
+      animation: 0.5s infinite linear spin;
+      animation-name: spin;
+    }
   }
 
   &--ingradient {
@@ -36,29 +40,61 @@
     box-shadow: 2px 1000px 1px #fff inset;
   }
 
+  &--white{
+    box-shadow: 4.37697px 3.74933px 32.4887px rgba(35, 35, 35, 0.14);
+  }
+
   &__spin > img {
     left: 10px;
+    margin-right: 5px;
     vertical-align: baseline;
     transition: 0.2s ease-out;
     -webkit-transition: 0.2s ease-out;
     -moz-transition: 0.2s ease-out;
     -ms-transition: 0.2s ease-out;
     -o-transition: 0.2s ease-out;
-    animation: 0.5s infinite linear spin;
-    -webkit-animation: 0.5s infinite linear spin;
     width: 21px;
-  
-    &__spin:hover > img {
-      @keyframes spin {
-        100% {
-          transform: rotate(180deg);
-          -webkit-transform: rotate(180deg);
-          -moz-transform: rotate(180deg);
-          -ms-transform: rotate(180deg);
-          -o-transform: rotate(180deg);
-        }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
       }
     }
+  }
+  
+}
+
+.btn-small {
+  min-width: 70px;
+  height: 18px;
+  border-radius: 30px;
+  padding: 0 10px;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 5px;
+  letter-spacing: -0.03em;
+  &--grad {
+    background: linear-gradient(90deg, #4dadd8 18%, #81e9c0 100%);
+    color: var(--color-white);
+  }
+
+  &--danger {
+    text-transform: uppercase;
+    background: #fae8f4;
+    color: var(--color-boulder);
+    width: 90px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background-image: url(./img/danger-btn.svg);
+    background-repeat: no-repeat;
+    background-position: left 3px center;
   }
 }
 
@@ -82,8 +118,6 @@
     }
   }
 }
-
-
 
 //XXX Код ниже для реализации наведения кнопок, пока думаем
 

@@ -26,15 +26,21 @@
           <button class="btn btns__btn btn-reset btn--main btn--outgradient">
             Registration
           </button>
-          <!-- <a class="btns__log-out nav__link" href="">log out</a> -->
+          <button class="btn btns__btn btn-reset ">
+            Balance: $100
+          </button>
+          <button class="btn btns__btn btn-reset btn--white">
+            User@email.com
+          </button>
+          <a class="btns__log-out nav__link" href="">log out</a>
         </div>
       </div>
     </section>
 
-    <History />
+    <!-- <History /> -->
     <Tuning />
     <!-- <Pay /> -->
-    <!-- <Pattern/> -->
+    <!-- <Pattern /> -->
     <section class="tune">
       <div class="container tune__bg">
         <div class="tune__content">

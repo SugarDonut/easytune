@@ -47,3 +47,17 @@ a {
   color: var(--color-shaft);
 }
 /* Общие стили */
+
+/* Задник для секций */
+
+.bg {
+  &--grad {
+    background: linear-gradient(180deg, #e9e9e9 -15.83%, #ffffff 93.18%);
+  }
+
+  &--white {
+    background: var(--color-white);
+  }
+}
+
+/* Задник для секций */

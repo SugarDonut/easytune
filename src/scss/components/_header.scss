@@ -1,8 +1,7 @@
 .header {
-
+  padding-top: 24px;
   &__container {
     @include flex-c-sb;
-    padding-top: 24px;
   }
 
   &__logo {
@@ -14,14 +13,8 @@
       margin-right: 98px;
     }
   }
-}
 
-.background{
-  &--grad{
-    background: linear-gradient(180deg, #e9e9e9 -15.83%, #ffffff 93.18%);
-  }
-
-  &--white{
-    background: var(--color-white);
+  &--white {
+    padding: 24px;
   }
 }
