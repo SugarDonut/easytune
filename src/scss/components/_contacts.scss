@@ -3,13 +3,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  margin-bottom: 76px;
+  margin-bottom: 60px;
 
   &__list {
-    // width: 322px;
-    &:not(:last-child) {
-      margin-bottom: 45px;
-    }
+    height: 92px;
   }
 
   &__title {
@@ -38,7 +35,6 @@
 
     .title {
       margin-bottom: 57px;
-      
     }
 
     h5 {
@@ -73,10 +69,8 @@
     -ms-border-radius: 18px;
     -o-border-radius: 18px;
 
-        // &:hover {
-        //   background: linear-gradient(90deg, #4DADD8 18%, #81E9C0 100%);
-        // }
-
-
+    // &:hover {
+    //   background: linear-gradient(90deg, #4DADD8 18%, #81E9C0 100%);
+    // }
   }
 }
