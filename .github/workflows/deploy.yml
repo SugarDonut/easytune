@@ -1,0 +1,13 @@
+name: Build front
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger web-hook
+        run: curl --request POST http://94.250.251.132:8123/deploy-motherfucker
+
