@@ -1,4 +1,5 @@
 .tuning {
+  flex-grow: 1;
   &__container {
     @include flex-sb;
     max-width: 974px;
@@ -6,7 +7,7 @@
     background: var(--color-white);
     box-shadow: 5.3px 4.54px 58.34px rgba(35, 35, 35, 0.11);
     border-radius: 18px;
-    margin: 90px auto 0;
+    margin: 90px auto 40px;
   }
 
   &__bg {
@@ -269,7 +270,7 @@
 
   &__input + &__text::before {
     content: "";
-    display: block;
+    display: inline-block;
     border: 1px solid #999999;
     width: 17.49px;
     height: 17.49px;

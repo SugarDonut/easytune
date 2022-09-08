@@ -1,4 +1,8 @@
-.pay {
+.payment{
+  flex-grow: 1;
+}
+
+.pay { 
   &__content {
     @include flex;
     justify-content: center;

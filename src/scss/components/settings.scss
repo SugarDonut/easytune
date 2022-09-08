@@ -1,0 +1,82 @@
+.settings {
+  &__bg {
+    background-image: url(./img/pay-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.stg {
+  &__content {
+    @include flex-center;
+    padding: 90px;
+  }
+
+  &__change {
+    @include flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 471px;
+    height: 397px;
+    margin-right: 38px;
+    padding: 49px 53px;
+    
+    & > .stg__title{
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 20px;
+    color: var(--color-shaft);
+  }
+
+
+
+  &__field {
+    & > .form-field__input:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__verif {
+    @include flex;
+    flex-direction: column;
+    width: 341px;
+    width: 397px;
+    padding: 49px 53px;
+
+    & > .stg__title{
+      margin-bottom: 29px;
+    }
+  }
+
+  &__danger {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--color-shaft);
+    padding: 15px 55px;
+    width: 271px;
+    height: 62px;
+    text-transform: uppercase;
+    background: #fae8f4;
+    color: var(--color-boulder);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background-image: url(./img/danger-btn.svg);
+    background-repeat: no-repeat;
+    background-position: left 17px center;
+    background-size: 23px ;
+  }
+
+  &__btn{
+    margin-top: auto;
+    align-self: flex-start;
+  }
+}
