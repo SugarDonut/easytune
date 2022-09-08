@@ -1,5 +1,5 @@
 <template>
-  <section class="tune ">
+  <section class="tune">
     <div class="container tune__bg">
       <div class="tune__content">
         <div class="tune__left">
