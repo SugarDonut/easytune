@@ -44,7 +44,7 @@
             <tbody class="table-history__body">
               <tr class="table-history__row">
                 <th class="table-history__column">
-                  <img src="./img/wrong.svg" alt="" />
+                  <img src="../img/wrong.svg" alt="" />
                 </th>
                 <th class="table-history__column">20200232.213557.8965</th>
                 <th class="table-history__column">
@@ -61,7 +61,7 @@
               </tr>
               <tr class="table-history__row">
                 <th class="table-history__column">
-                  <img src="./img/chip.svg" alt="" />
+                  <img src="../img/chip.svg" alt="" />
                 </th>
                 <th class="table-history__column">20200232.213557.8965</th>
                 <th class="table-history__column">
@@ -78,7 +78,7 @@
               </tr>
                             <tr class="table-history__row">
                 <th class="table-history__column">
-                  <img src="./img/chip.svg" alt="" />
+                  <img src="../img/chip.svg" alt="" />
                 </th>
                 <th class="table-history__column">20200232.213557.8965</th>
                 <th class="table-history__column">
@@ -95,7 +95,7 @@
               </tr>
                             <tr class="table-history__row">
                 <th class="table-history__column">
-                  <img src="./img/chip.svg" alt="" />
+                  <img src="../img/chip.svg" alt="" />
                 </th>
                 <th class="table-history__column">20200232.213557.8965</th>
                 <th class="table-history__column">
@@ -112,7 +112,7 @@
               </tr>
                             <tr class="table-history__row">
                 <th class="table-history__column">
-                  <img src="./img/chip.svg" alt="" />
+                  <img src="../img/chip.svg" alt="" />
                 </th>
                 <th class="table-history__column">20200232.213557.8965</th>
                 <th class="table-history__column">
@@ -136,7 +136,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "History"
+};
 </script>
 
 <style lang="scss"></style>

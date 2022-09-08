@@ -8,21 +8,21 @@
       </p> -->
       <p class="modal__subtitle">Check your email, please</p>
       <div class="modal__content">
-        <label class="modal__field form-field" for="">
+        <label class="modal__field form-field" for="email">
           <input
             class="form-field__input"
             type="text"
             name=""
-            id=""
+            id="email"
             placeholder="E-mail"
           />
         </label>
-        <label class="modal__field form-field" for="">
+        <label class="modal__field form-field" for="password">
           <input
             class="form-field__input"
             type="text"
             name=""
-            id=""
+            id="password"
             placeholder="Password"
           />
         </label>
@@ -45,7 +45,7 @@
 
 <script>
 export default {
-  name: "Modal",
+  name: "ModalBox",
 };
 </script>
 
