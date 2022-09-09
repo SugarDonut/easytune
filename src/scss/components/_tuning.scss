@@ -166,6 +166,10 @@
     cursor: pointer;
   }
 
+  &__btn:hover {
+    background-color: var(--color-pastel);
+  }
+
   &__text{
     font-weight: 300;
     font-size: 12px;
