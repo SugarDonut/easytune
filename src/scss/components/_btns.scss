@@ -10,9 +10,9 @@
   color: var(--color-shaft);
 
   & > img {
-    width: 22px;
-    height: 22px;
-    margin-right: 6px;
+    width: 28px;
+    height: 28px;
+    padding: 3px;
   }
 
   &--grad {
@@ -33,10 +33,10 @@
       background-position: 0 0;
     }
 
-    &:hover > img {
-      animation: 0.5s infinite linear spin;
-      animation-name: spin;
-    }
+    // &:hover > img {
+    //   animation: 0.5s infinite linear spin;
+    //   animation-name: spin;
+    // }
   }
 
   &--ingradient {
@@ -60,16 +60,23 @@
     padding: 10px 40px;
   }
 
+  &__disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    background: rgb(201, 201, 201);
+  }
+
   &__spin > img {
     left: 10px;
-    margin-right: 5px;
     vertical-align: baseline;
     transition: 0.2s ease-out;
     -webkit-transition: 0.2s ease-out;
     -moz-transition: 0.2s ease-out;
     -ms-transition: 0.2s ease-out;
     -o-transition: 0.2s ease-out;
-    width: 21px;
+    animation-name: spin;
+    animation: 0.5s infinite linear spin;
+
 
     @keyframes spin {
       100% {

@@ -135,6 +135,46 @@
   }
 }
 
+.label-upload{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 0.5px solid #D3D7DB;
+  border-radius: 9px;
+  overflow: hidden;
+  border-radius: 9px;
+
+  &__file{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  &__btn{
+    position: relative;
+    display: inline-block;
+    background: #385ce8;
+    height: 51px;
+    width: 51px;
+    border-radius: 9px;
+    background-image: url(./img/paperclip.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &__text{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 9px;
+    color: #7C7C7C;
+    margin-left: 10px;
+  }
+
+}
 
 .label-file {
   position: relative;
@@ -304,5 +344,3 @@
     border-color: var(--grad-Shakespeare);
   }
 }
-
-

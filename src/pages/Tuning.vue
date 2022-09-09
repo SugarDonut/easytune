@@ -41,17 +41,23 @@
             />
           </label>
 
-          <label class="label-file">
-            <button class="label-file__button"></button>
-            <input class="label-file__input" type="url" placeholder="BMW.bin" />
+          <label class="label-upload">
+            <input class="label-upload__file" type="file" />
+            <span class="label-upload__btn"></span>
+            <span class="label-upload__text">Максимум 10мб</span>
           </label>
+
           <p class="label-file__descr">
             Extracted files ONLY<br />
             No rar, zip, 7z or any other archives
           </p>
-          <button class="btn btn__spin btn-reset btn--grad btn--ingradient">
-            <img src="../img/spin.svg" alt="">
-            Check file again
+          <button
+            @click="checkedFileBin"
+            :class="{ btn__spin: spinImage, btn__disabled: spinImage }"
+            class="btn btn-reset btn--grad btn--ingradient"
+          >
+            <img src="../img/spin.svg" alt="" />
+            <span>Check file again</span>
           </button>
         </div>
         <div class="tuning__choice choice">
@@ -194,6 +200,17 @@
 <script>
 export default {
   name: "Tuning",
+  data() {
+    return {
+      spinImage: false,
+    };
+  },
+  methods: {
+    checkedFileBin() {
+      this.spinImage = this.spinImage === true ? false : true;
+      setTimeout(() => (this.spinImage = false), 7000);
+    },
+  },
 };
 </script>
 
