@@ -1,13 +1,16 @@
 .tune {
+  background: url(./img/svg/cloud.svg) no-repeat right top;
   &__bg {
-    background-image: url(./img/Car-bg.png);
-    background-repeat: no-repeat;
-    background-position: right -79px top -42px
+    background: url(./img/svg/Car.svg) no-repeat right -4px top 119px;
   }
 
   &__content {
+    @include bp(mobile){
+      display: flex;
+      justify-content: center
+    }
     @include flex-sb;
-    padding-top: 115px;
+    padding-top: 91px;
     padding-bottom: 210px;
   }
 
@@ -16,7 +19,7 @@
 
     &--slogan {
       display: block;
-      font-size: 26px;
+      @include toRem(26);
       line-height: 32px;
       letter-spacing: 0.02em;
       text-transform: uppercase;
@@ -25,30 +28,32 @@
     }
 
     &--main-title {
-      font-size: 55px;
+      @include toRem(55);
       font-weight: 600;
       line-height: 68px;
       color: var(--color-shaft);
-      margin-bottom: 18px;
+      margin-bottom: 21px;
     }
 
     &--descr {
       font-weight: 400;
-      font-size: 21px;
+      @include toRem(21);
       line-height: 26px;
       color: var(--color-black);
-      margin-bottom: 44px;
+      margin-bottom: 42px;
     }
   }
 
   &__right {
+    @include bp(mobile){
+      display: none;
+    }
     display: flex;
     align-items: flex-end; // FIXME Как лучше реализовать позиционирование с машиной
     flex-wrap: wrap;
     flex-direction: column;
     transform: translateY(80px);
     font-weight: 600;
-    font-size: 15px;
     line-height: 19px;
     color: var(--color-shaft);
 
@@ -56,9 +61,12 @@
       width: 165px;
       margin-bottom: 20px;
       padding: 31px 24px;
-
       img {
         margin-bottom: 6px;
+      }
+
+      p{
+        @include toRem(15);
       }
     }
 

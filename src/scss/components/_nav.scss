@@ -1,12 +1,14 @@
 .nav {
-
   &__list {
     @include flex;
+    @include bp(mobile) {
+      display: none;
+    }
   }
 
   &__link {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 0.9rem;
     line-height: 25px;
     letter-spacing: 0.03em;
     color: var(--color-shaft);
@@ -21,5 +23,5 @@
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
-}
+  }
 }

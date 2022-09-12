@@ -34,14 +34,14 @@
 
       &__hundred {
         font-weight: 600;
-        font-size: 205px;
+        @include toRem(205);
         line-height: 135px;
         color: rgba(56, 92, 232, 0.2);
       }
 
       &__title {
         font-weight: 500;
-        font-size: 22px;
+        @include toRem(22);
         line-height: 28px;
         text-transform: uppercase;
         color: var(--color-shaft);
@@ -49,7 +49,7 @@
 
       &__subtitle {
         font-weight: 400;
-        font-size: 13px;
+        @include toRem(13);
         line-height: 27px;
         color: var(--color-boulder);
       }
@@ -65,7 +65,7 @@
 
   &__subtitle {
     font-weight: 400;
-    font-size: 13px;
+    @include toRem(13);
     line-height: 23px;
     color: var(--color-boulder);
   }
@@ -91,14 +91,14 @@
 
   &__title {
     font-weight: 500;
-    font-size: 16px;
+    @include toRem(16);
     line-height: 19px;
     color: var(--color-shaft);
   }
 
   &__number {
     font-weight: 300;
-    font-size: 55px;
+    @include toRem(55);
     line-height: 55px;
     color: var(--color-white);
     position: absolute;

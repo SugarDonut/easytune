@@ -11,7 +11,7 @@
 
   &__title {
     font-weight: 500;
-    font-size: 16px;
+    @include toRem(16);
     line-height: 20px;
     letter-spacing: 0.03em;
     color: var(--color-silver);
@@ -20,7 +20,7 @@
 
   &__subtitle {
     font-weight: 500;
-    font-size: 14px;
+    @include toRem(14);
     line-height: 17px;
     color: var(--color-black);
   }
@@ -39,7 +39,7 @@
 
     h5 {
       font-weight: 500;
-      font-size: 16px;
+      @include toRem(16);
       line-height: 23px;
       letter-spacing: 0.05em;
       text-transform: uppercase;
@@ -48,7 +48,7 @@
 
     span {
       font-weight: 500;
-      font-size: 14px;
+      @include toRem(14);
       line-height: 23px;
       color: var(--color-boulder);
     }

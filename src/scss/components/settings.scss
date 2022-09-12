@@ -28,7 +28,7 @@
 
   &__title {
     font-weight: 600;
-    font-size: 25px;
+    @include toRem(25);
     line-height: 20px;
     color: var(--color-shaft);
   }
@@ -55,7 +55,7 @@
 
   &__danger {
     font-weight: 400;
-    font-size: 12px;
+    @include toRem(12);
     line-height: 17px;
     color: var(--color-shaft);
     padding: 15px 55px;

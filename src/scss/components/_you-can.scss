@@ -1,5 +1,9 @@
 .service {
   @include flex-sb;
+  @include bp(mobile) {
+    justify-content: center;
+    align-items: center ;
+  }
 
   margin-bottom: 162px;
 
@@ -12,6 +16,9 @@
   // .service__item
 
   &__item {
+    @include bp(mobile) {
+      width: 100%;
+    }
     background-image: url(./img/line.svg);
     background-repeat: no-repeat;
     background-position: left 10px;
@@ -27,7 +34,7 @@
 
   &__title {
     font-weight: 500;
-    font-size: 19px;
+    @include toRem(19);
     line-height: 19px;
     color: var(--color-shaft);
     margin-bottom: 7px;
@@ -37,7 +44,7 @@
 
   &__descr {
     font-weight: 400;
-    font-size: 13px;
+    @include toRem(13);
     line-height: 27px;
     color: var(--color-boulder);
   }
@@ -54,5 +61,8 @@
     // background-size: cover;
     background-repeat: no-repeat;
     background-position: top 36px left 81px; //FIXME Возможно надо поправить
+    @include bp(mobile) {
+      display: none;
+    }
   }
 }
