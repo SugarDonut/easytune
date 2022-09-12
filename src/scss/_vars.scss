@@ -7,13 +7,11 @@
   --color-silver: #bfbfbf;
   --grad-Shakespeare: #4dadd8;
   --grad-Riptide: #81e9c0;
+  --font-size: 16px;
 }
 
 $grid-breakpoints: (
-  mobile: 576px,
-  minitablet: 576px,
-  tablet: 1024px,
-  desktop: 1025px,
-  minidesk: 1200px,
-  middledesk: 1440px,
+  mobile: 688px,
+  tablet: 992px,
+  desk: 1312px,
 ) !default;

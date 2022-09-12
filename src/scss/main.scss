@@ -1,4 +1,12 @@
 /*
+* Миксины
+*/
+
+@import "./mixins/font-face";
+@import "./mixins/media";
+@import "./mixins/mini";
+
+/*
 * Переменные
 */
 
@@ -9,16 +17,6 @@
 */
 
 @import "./settings";
-
-/*
-* Миксины
-*/
-
-@import "./mixins/font-face";
-@import "./mixins/media";
-@import "./mixins/mini";
-
-
 
 /*
 * Шрифты

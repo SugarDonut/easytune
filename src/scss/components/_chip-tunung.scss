@@ -1,49 +1,72 @@
 .chip-tuning {
   &__block {
     @include flex-sb;
+    @include bp(mobile) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     margin-bottom: 121px;
   }
 
   &__param {
     max-width: 360px;
+
+    @include bp(mobile) {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   &__boost {
     @include flex;
     font-weight: 600;
-    font-size: 17px;
+    @include toRem(17);
     line-height: 23px;
     color: var(--color-shaft);
+    @include bp(mobile) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
   }
 }
 .subtitle {
   font-weight: 600;
-  font-size: 35px;
+  @include toRem(35);
   line-height: 35px;
   color: var(--color-shaft);
   margin-bottom: 18px;
 }
 .descr {
   font-weight: 400;
-  font-size: 13px;
+  @include toRem(13);
   line-height: 27px;
   color: var(--color-boulder);
 }
 .chip-block {
-  // .chip-block_mother
   width: 370px;
   height: 163px;
   background-repeat: no-repeat;
   background-position: top left;
   padding: 20px;
+  @include bp(mobile) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 
   &:not(:last-child) {
     margin-right: 30px;
+
+    @include bp(mobile) {
+      margin-right: 0;
+    }
   }
 
   &__mother {
     background-image: url(./img/green.jpg);
     position: relative;
+
 
     img {
       position: absolute;
@@ -56,6 +79,8 @@
       right: -145px;
       top: 29px;
       width: 138px;
+      display: inline-block;
+      @include toRem(17);
     }
   }
 
@@ -72,10 +97,12 @@
     }
 
     p {
+      @include toRem(17);
       position: relative;
       right: -159px;
       top: 25px;
       width: 164px;
+      display: inline-block;
     }
   }
 }

@@ -18,7 +18,7 @@
 
   &__title {
     font-weight: 600;
-    font-size: 25px;
+    @include toRem(25);
     line-height: 20px;
     color: var(--color-shaft);
     margin-bottom: 24px;
@@ -50,7 +50,7 @@
 
       .left-name {
         font-weight: 600;
-        font-size: 12px;
+        @include toRem(12);
         line-height: 19px;
         color: var(--color-shaft);
         margin-right: 52px;
@@ -60,7 +60,7 @@
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        @include toRem(12);
         line-height: 19px;
         color: var(--color-shaft);
       }
@@ -69,7 +69,7 @@
     &__stamp {
       p {
         font-weight: 600;
-        font-size: 10px;
+        @include toRem(10);
         line-height: 19px;
         letter-spacing: 0.01em;
         color: var(--color-shaft);
@@ -95,7 +95,7 @@
       margin-left: 26px;
       p {
         font-weight: 500;
-        font-size: 12px;
+        @include toRem(12);
         line-height: 19px;
         letter-spacing: 0.01em;
         color: #c1c1c1;
@@ -103,7 +103,7 @@
 
       span {
         font-weight: 500;
-        font-size: 14px;
+        @include toRem(14);
         line-height: 19px;
         letter-spacing: 0.01em;
         color: var(--color-shaft);
@@ -117,7 +117,7 @@
 
   &__text {
     font-weight: 300;
-    font-size: 13px;
+    @include toRem(13);
     line-height: 9px;
     margin-bottom: 6px;
     color: var(--color-boulder);
@@ -126,7 +126,7 @@
   &__input {
     border: none;
     font-weight: 500;
-    font-size: 14px;
+    @include toRem(14);
     line-height: 9px;
     color: var(--color-shaft);
     border-bottom: 0.5px solid #d3d7db;
@@ -135,16 +135,16 @@
   }
 }
 
-.label-upload{
+.label-upload {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
-  border: 0.5px solid #D3D7DB;
+  border: 0.5px solid #d3d7db;
   border-radius: 9px;
   overflow: hidden;
   border-radius: 9px;
 
-  &__file{
+  &__file {
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -153,7 +153,7 @@
     height: 0;
   }
 
-  &__btn{
+  &__btn {
     position: relative;
     display: inline-block;
     background: #385ce8;
@@ -170,14 +170,13 @@
     background-color: var(--color-pastel);
   }
 
-  &__text{
+  &__text {
     font-weight: 300;
-    font-size: 12px;
+    @include toRem(12);
     line-height: 9px;
-    color: #7C7C7C;
+    color: #7c7c7c;
     margin-left: 10px;
   }
-
 }
 
 .label-file {
@@ -219,7 +218,7 @@
 
   &__descr {
     font-weight: 300;
-    font-size: 13px;
+    @include toRem(13);
     line-height: 15px;
     color: var(--color-boulder);
     margin-bottom: 30px;
@@ -229,7 +228,7 @@
 .task {
   border-radius: 5px;
   font-weight: 600;
-  font-size: 14px;
+  @include toRem(14);
   line-height: 20px;
   letter-spacing: 0.03em;
   color: var(--color-white);
@@ -237,7 +236,7 @@
 
   span {
     font-weight: 500;
-    font-size: 11px;
+    @include toRem(11);
     line-height: 19px;
     letter-spacing: 0.02em;
   }
@@ -254,7 +253,7 @@
 .table {
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  @include toRem(12);
   line-height: 12px;
   letter-spacing: 0.01em;
   color: #c1c1c1;
@@ -288,7 +287,7 @@
 
   &__title {
     font-weight: 500;
-    font-size: 14px;
+    @include toRem(14);
     line-height: 19px;
     letter-spacing: 0.01em;
     text-transform: uppercase;
@@ -297,7 +296,7 @@
 
   &__desc {
     font-weight: 500;
-    font-size: 10px;
+    @include toRem(10);
     line-height: 12px;
     letter-spacing: 0.01em;
     color: #c1c1c1;

@@ -13,7 +13,7 @@
 
   &__title {
     font-weight: 600;
-    font-size: 25px;
+    @include toRem(25);
     line-height: 20px;
     color: var(--color-shaft);
     margin-bottom: 26px;
@@ -36,7 +36,7 @@
 
   &__label > input {
     font-weight: 500;
-    font-size: 10px;
+    @include toRem(10);
     line-height: 9px;
     color: var(--color-boulder);
     padding: 4px 0;
@@ -54,7 +54,7 @@
     background: #f6f6f6;
     border-radius: 10px;
     font-weight: 300;
-    font-size: 11px;
+    @include toRem(11);
     line-height: 9px;
     color: #7c7c7c;
     padding: 15px 20px;
@@ -79,7 +79,7 @@
 
 .tag {
   font-weight: 300;
-  font-size: 10px;
+  @include toRem(10);
   line-height: 9px;
 
   &__list {
@@ -91,7 +91,7 @@
     padding: 3px 16px;
     color: var(--color-white);
     font-weight: 300;
-    font-size: 10px;
+    @include toRem(10);
     line-height: 9px;
     color: var(--color-boulder);
 
@@ -108,36 +108,36 @@
 
 .table-history {
   border-collapse: collapse;
-  width: 100%; 
+  width: 100%;
   text-align: left;
 
   &__head {
     font-weight: 300;
-    font-size: 10px;
+    @include toRem(10);
     line-height: 9px;
     color: var(--color-boulder);
   }
 
-  &__body{
+  &__body {
     font-weight: 500;
-font-size: 10px;
-line-height: 9px;
-color: var(--color-shaft);
+    @include toRem(10);
+    line-height: 9px;
+    color: var(--color-shaft);
   }
 
-&__row{
-  border-bottom: 0.5px solid #D3D7DB;
-  padding-bottom: 10px;
-
-
-}
-
-&__column{
-  height: 41px;
-  padding-left: 10px;
-
-  &:nth-child(1){
-    text-align: center;
+  &__row {
+    border-bottom: 0.5px solid #d3d7db;
+    padding-bottom: 10px;
   }
-}
+
+  &__column {
+    @include toRem(10);
+    height: 41px;
+    padding-left: 10px;
+    
+
+    &:nth-child(1) {
+      text-align: center;
+    }
+  }
 }

@@ -7,3 +7,8 @@
     font-style: $style;
   }
 }
+
+@mixin toRem($px){
+  $pxToRem: ($px / 16);
+  font-size: $pxToRem + rem;
+}

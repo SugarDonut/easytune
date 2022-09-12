@@ -36,8 +36,7 @@
         <div class="chip-tuning__param">
           <h2 class="subtitle">Chip tuning</h2>
           <p class="descr">
-            changes in the parameters of the engine, by making changes to the
-            firmware of the controller.
+            ‒ changes in the parameters of the engine, by making changes to the firmware of the controller.
           </p>
         </div>
         <div class="chip-tuning__boost">

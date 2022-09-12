@@ -46,7 +46,7 @@
 
   &__title {
     font-weight: 600;
-    font-size: 33px;
+    @include toRem(33);
     line-height: 23px;
     text-align: center;
     color: var(--color-shaft);
@@ -55,7 +55,7 @@
 
   &__subtitle {
     font-weight: 300;
-    font-size: 13px;
+    @include toRem(13);
     line-height: 21px;
     color: var(--color-boulder);
     min-height: 63px;
@@ -74,14 +74,14 @@
     // align-self: flex-end;
     margin-bottom: 28px;
 
-    &--right{
+    &--right {
       align-self: flex-end;
     }
   }
 
   &__link {
     font-weight: 400;
-    font-size: 13px;
+    @include toRem(13);
     line-height: 21px;
     text-align: right;
     text-decoration-line: underline;
@@ -107,9 +107,8 @@
     border-radius: 10px;
     padding-left: 37px;
     font-weight: 300;
-    font-size: 13px;
+    @include toRem(13);
     line-height: 21px;
     color: var(--color-boulder);
   }
-
 }

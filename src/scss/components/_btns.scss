@@ -1,7 +1,7 @@
 .btn {
   @include flex-v-center;
   font-weight: 600;
-  font-size: 14px;
+  @include toRem(14);
   line-height: 17px;
   text-align: center;
   padding: 10px;
@@ -52,7 +52,7 @@
     align-items: center;
     box-shadow: 4.37697px 3.74933px 32.4887px rgba(35, 35, 35, 0.14);
     font-weight: 400;
-    font-size: 13px;
+    @include toRem(13);
     line-height: 25px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -60,7 +60,7 @@
     padding: 10px 40px;
   }
 
-  &__disabled{
+  &__disabled {
     cursor: not-allowed;
     pointer-events: none;
     background: rgb(201, 201, 201);
@@ -76,7 +76,6 @@
     -o-transition: 0.2s ease-out;
     animation-name: spin;
     animation: 0.5s infinite linear spin;
-
 
     @keyframes spin {
       100% {
@@ -96,7 +95,7 @@
   border-radius: 30px;
   padding: 0 10px;
   font-weight: 400;
-  font-size: 7px;
+  @include toRem(7);
   line-height: 5px;
   letter-spacing: -0.03em;
   &--grad {
@@ -181,7 +180,7 @@
 
 // .btn {
 //   font-weight: 600;
-//   font-size: 14px;
+//   @include toRem(14);
 //   line-height: 17px;
 //   text-align: center;
 

@@ -33,7 +33,7 @@
 
   &__title {
     font-weight: 600;
-    font-size: 15px;
+    @include toRem(15);
     line-height: 23px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -43,7 +43,7 @@
 
   &__count {
     font-weight: 400;
-    font-size: 40px;
+    @include toRem(40);
     line-height: 23px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
