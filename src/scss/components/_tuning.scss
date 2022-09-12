@@ -144,6 +144,12 @@
   overflow: hidden;
   border-radius: 9px;
 
+  &:hover {
+    .label-upload__btn{
+    background-color: var(--color-pastel);
+    }
+  }
+
   &__file {
     position: absolute;
     z-index: -1;
@@ -151,6 +157,7 @@
     display: block;
     width: 0;
     height: 0;
+    
   }
 
   &__btn {
@@ -166,9 +173,6 @@
     cursor: pointer;
   }
 
-  &__btn:hover {
-    background-color: var(--color-pastel);
-  }
 
   &__text {
     font-weight: 300;
