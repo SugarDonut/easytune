@@ -6,7 +6,7 @@
           <h3 class="pay__title">your balance</h3>
           <span class="pay__count">$100</span>
         </div>
-        <div class="pay__doll">
+        <div class="pay__doll white-block">
             <label class="pay__lable" for="">
               <input class="pay__input" type="text" name="" id="" />
             </label>
