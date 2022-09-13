@@ -6,9 +6,12 @@
 
   &__block {
     max-width: 1021px;
-    height: 459px;
+    min-height: 459px;
     margin: 0 auto;
     padding: 49px 15px 0 44px;
+    @include bp(mobile) {
+      padding: 15px;
+    }
   }
 
   &__title {
@@ -23,15 +26,25 @@
     @include flex;
     align-items: baseline;
     margin-bottom: 24px;
+    @include bp(mobile) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__list {
     @include flex;
     margin-right: 41px;
+    @include bp(mobile){
+      display: none;
+    }
   }
 
   &__label {
     flex-grow: 1;
+    @include bp(mobile) {
+      width: 100%;
+    }
   }
 
   &__label > input {
@@ -48,6 +61,10 @@
   position: relative;
   min-width: 167px;
   width: 263px;
+  @include bp(mobile) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 
   &__input {
     border: none;
@@ -82,9 +99,6 @@
   @include toRem(10);
   line-height: 9px;
 
-  &__list {
-  }
-
   &__link {
     border: 0.5px solid var(--color-boulder);
     border-radius: 8.5px;
@@ -116,6 +130,9 @@
     @include toRem(10);
     line-height: 9px;
     color: var(--color-boulder);
+    @include bp(mobile) {
+      display: none;
+    }
   }
 
   &__body {
@@ -128,16 +145,63 @@
   &__row {
     border-bottom: 0.5px solid #d3d7db;
     padding-bottom: 10px;
+    @include bp(mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__column {
     @include toRem(10);
     height: 41px;
     padding-left: 10px;
+    @include bp(mobile) {
+      @include toRem(13);
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+      padding: 0 15px;
     
+    }
 
     &:nth-child(1) {
       text-align: center;
     }
+  }
+
+  &__img > img {
+    @include bp(mobile) {
+      width: 35px;
+    }
+  }
+
+  &__download,
+  &__remove {
+    @include bp(mobile) {
+      width: 100%;
+    }
+  }
+
+  &__download > button,
+  &__remove > button {
+    @include bp(mobile) {
+      @include toRem(12);
+      width: 100%;
+      height: 40px;
+      border-radius: 10px;
+      // background-image: none;
+    }
+  }
+
+  &__remove > button{
+        background-image: url(./img/danger-btn.svg);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-size: 20px ;
   }
 }

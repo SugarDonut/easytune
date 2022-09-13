@@ -1,12 +1,15 @@
-.payment{
+.payment {
   flex-grow: 1;
 }
 
-.pay { 
+.pay {
   &__content {
     @include flex;
     justify-content: center;
     padding: 128px 0;
+    @include bp(mobile) {
+      flex-direction: column;
+    }
   }
 
   &__bg {
@@ -29,6 +32,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 18px;
+    @include bp(mobile) {
+      min-width: 200px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
@@ -51,26 +59,47 @@
   }
 
   &__doll {
-    @include flex-c-sb;
+    @include flex;
     justify-content: center;
+    align-items: center;
     min-width: 471px;
     height: 203px;
     background-color: #fff;
     border-radius: 18px;
-
-    &::before{
-      content: url(./img/dollar.svg);
+    @include bp(mobile) {
+      flex-direction: column;
+      min-width: 200px;
+      width: 100%;
+      padding: 0 15px;
     }
   }
 
-  &__input{
-    margin:0 5px;
+  &__lable {
+    position: relative;
+    @include bp(mobile) {
+      margin-bottom: 20px;
+    }
+    &::before {
+      content: url(./img/dollar.svg);
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      left: -20px;
+      top: -3px;
+    }
+  }
+
+  &__input {
+    margin: 0 5px;
     border: none;
-    border-bottom: 0.5px solid #D3D7DB;
+    border-bottom: 0.5px solid #d3d7db;
     height: 30px;
   }
 
   &__btn {
     color: #fff;
+    @include bp(mobile){
+      width: 100%;
+    }
   }
 }

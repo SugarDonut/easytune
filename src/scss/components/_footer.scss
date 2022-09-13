@@ -1,6 +1,10 @@
 .footer {
   padding: 48px 0;
   background-color: #f6f6f6;
+  @include bp(mobile) {
+
+    padding: 20px 0;
+  }
 
   &__nav {
     margin-left: -214px;

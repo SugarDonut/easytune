@@ -41,12 +41,13 @@
     @include bp(mobile){
       width: 100%;
       grid-column: 2 span;
+      margin-bottom: 20px;
     }
 
     .title {
       margin-bottom: 57px;
       @include bp(mobile){
-        margin-bottom: 40px;
+        margin: 40px 0;
       }
     }
 

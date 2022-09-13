@@ -29,12 +29,17 @@
   }
 
   &__btn{
+    @include bp(mobile){
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
     &:not(:last-child){
       margin-right: 20px;
       @include bp(mobile){
         margin-right: 0;
-        margin-bottom: 20px;
       }
+
     }
   }
 

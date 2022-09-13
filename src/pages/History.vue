@@ -43,87 +43,36 @@
             </thead>
             <tbody class="table-history__body">
               <tr class="table-history__row">
-                <th class="table-history__column">
-                  <img src="../img/wrong.svg" alt="" />
+                <th class="table-history__column table-history__img">
+                  <img src="../img/wrong.svg" alt="wrong" />
                 </th>
-                <th class="table-history__column">20200232.213557.8965</th>
-                <th class="table-history__column">
+                <th class="table-history__column table-history__task">20200232.213557.8965</th>
+                <th class="table-history__column table-history__title">
                   BMW_5er_F10-F11-F18_Bosch_EDC17CP45_O_7BUJ-00000BAB-074-517690_
                 </th>
-                <th class="table-history__column">$100</th>
-                <th class="table-history__column">Mar 23, 2020</th>
-                <th class="table-history__column">
+                <th class="table-history__column table-history__sum">$100</th>
+                <th class="table-history__column table-history__date">Mar 23, 2020</th>
+                <th class="table-history__column table-history__download">
                   <button class="btn-reset btn-small btn-small--grad">Download</button>
                 </th>
-                <th class="table-history__column">
+                <th class="table-history__column table-history__remove">
                   <button class="btn-reset btn-small btn-small--danger">remove dtc</button>
                 </th>
               </tr>
               <tr class="table-history__row">
-                <th class="table-history__column">
+                <th class="table-history__column table-history__img">
                   <img src="../img/chip.svg" alt="" />
                 </th>
-                <th class="table-history__column">20200232.213557.8965</th>
-                <th class="table-history__column">
+                <th class="table-history__column table-history__task">20200232.213557.8965</th>
+                <th class="table-history__column tabble-history__title">
                   BMW_5er_F10-F11-F18_Bosch_EDC17CP45_O_7BUJ-00000BAB-074-517690_
                 </th>
-                <th class="table-history__column">$100</th>
-                <th class="table-history__column">Mar 23, 2020</th>
-                <th class="table-history__column">
+                <th class="table-history__column table-history__sum">$100</th>
+                <th class="table-history__column table-history__date">Mar 23, 2020</th>
+                <th class="table-history__column table-history__download">
                   <button class="btn-reset btn-small btn-small--grad">Download</button>
                 </th>
-                <th class="table-history__column">
-                  <button class="btn-reset btn-small btn-small--danger">remove dtc</button>
-                </th>
-              </tr>
-                            <tr class="table-history__row">
-                <th class="table-history__column">
-                  <img src="../img/chip.svg" alt="" />
-                </th>
-                <th class="table-history__column">20200232.213557.8965</th>
-                <th class="table-history__column">
-                  BMW_5er_F10-F11-F18_Bosch_EDC17CP45_O_7BUJ-00000BAB-074-517690_
-                </th>
-                <th class="table-history__column">$100</th>
-                <th class="table-history__column">Mar 23, 2020</th>
-                <th class="table-history__column">
-                  <button class="btn-reset btn-small btn-small--grad">Download</button>
-                </th>
-                <th class="table-history__column">
-                  <button class="btn-reset btn-small btn-small--danger">remove dtc</button>
-                </th>
-              </tr>
-                            <tr class="table-history__row">
-                <th class="table-history__column">
-                  <img src="../img/chip.svg" alt="" />
-                </th>
-                <th class="table-history__column">20200232.213557.8965</th>
-                <th class="table-history__column">
-                  BMW_5er_F10-F11-F18_Bosch_EDC17CP45_O_7BUJ-00000BAB-074-517690_
-                </th>
-                <th class="table-history__column">$100</th>
-                <th class="table-history__column">Mar 23, 2020</th>
-                <th class="table-history__column">
-                  <button class="btn-reset btn-small btn-small--grad">Download</button>
-                </th>
-                <th class="table-history__column">
-                  <button class="btn-reset btn-small btn-small--danger">remove dtc</button>
-                </th>
-              </tr>
-                            <tr class="table-history__row">
-                <th class="table-history__column">
-                  <img src="../img/chip.svg" alt="" />
-                </th>
-                <th class="table-history__column">20200232.213557.8965</th>
-                <th class="table-history__column">
-                  BMW_5er_F10-F11-F18_Bosch_EDC17CP45_O_7BUJ-00000BAB-074-517690_
-                </th>
-                <th class="table-history__column">$100</th>
-                <th class="table-history__column">Mar 23, 2020</th>
-                <th class="table-history__column">
-                  <button class="btn-reset btn-small btn-small--grad">Download</button>
-                </th>
-                <th class="table-history__column">
+                <th class="table-history__column table-history__remove">
                   <button class="btn-reset btn-small btn-small--danger">remove dtc</button>
                 </th>
               </tr>

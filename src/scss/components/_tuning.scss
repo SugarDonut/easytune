@@ -8,6 +8,10 @@
     box-shadow: 5.3px 4.54px 58.34px rgba(35, 35, 35, 0.11);
     border-radius: 18px;
     margin: 90px auto 40px;
+    @include bp(mobile) {
+      flex-direction: column;
+      margin: 20px 0;
+    }
   }
 
   &__bg {
@@ -30,6 +34,11 @@
     flex-basis: 40%;
     margin-left: 56px;
     padding: 0 33px;
+    @include bp(mobile) {
+      margin-left: 0;
+      margin-bottom: 20px;
+      padding: 0 15px;
+    }
   }
 
   &__label {
@@ -87,6 +96,7 @@
 
       span {
         font-weight: 400;
+        @include toRem(10);
       }
     }
 
@@ -145,8 +155,8 @@
   border-radius: 9px;
 
   &:hover {
-    .label-upload__btn{
-    background-color: var(--color-pastel);
+    .label-upload__btn {
+      background-color: var(--color-pastel);
     }
   }
 
@@ -157,7 +167,6 @@
     display: block;
     width: 0;
     height: 0;
-    
   }
 
   &__btn {
@@ -172,7 +181,6 @@
     background-repeat: no-repeat;
     cursor: pointer;
   }
-
 
   &__text {
     font-weight: 300;

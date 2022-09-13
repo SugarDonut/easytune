@@ -7,10 +7,10 @@
           <span class="pay__count">$100</span>
         </div>
         <div class="pay__doll">
-          <label for="">
-            <input class="pay__input" type="text" name="" id="" />
-          </label>
-          <button class="btn btn--grad pay__btn">Top up balance</button>
+            <label class="pay__lable" for="">
+              <input class="pay__input" type="text" name="" id="" />
+            </label>
+          <button class="pay__btn btn btn--grad">Top up balance</button>
         </div>
       </div>
     </div>

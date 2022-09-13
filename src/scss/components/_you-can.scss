@@ -12,6 +12,9 @@
 
   &__list {
     margin-top: 95px;
+    @include bp(mobile){
+      margin-top: 55px;
+    }
   }
 
   // .service__item
