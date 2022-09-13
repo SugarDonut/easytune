@@ -1,18 +1,17 @@
 .advantages {
   background-color: #f6f6f6;
 }
-// .header--main {
-// }
-// .container {
-// }
+
 .advantages-block {
-  // background-image: url(./img/Car-bg-2.png);
-  // background-repeat: no-repeat;
-  // background-position: left bottom 10px;
+
   @include flex-sb;
   margin-bottom: 120px;
+  @include bp(mobile){
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
 
-  // .advantages-block_subtitle
 
   &__percent {
     padding-top: 55px;
@@ -23,6 +22,9 @@
       position: relative;
       margin-top: 57px;
       margin-left: 113px;
+      @include bp(mobile){
+        display: none;
+      }
 
       &__one {
         margin-right: 16px;
@@ -75,6 +77,9 @@
   &__list {
     margin-top: 55px;
     margin-bottom: 41px;
+    @include bp(mobile){
+      width: 100%;
+    }
   }
 
   // .advantages-block__item
@@ -85,6 +90,9 @@
     padding: 28px 40px;
     width: 263px;
     height: 147px;
+    @include bp(mobile){
+      width: 100%;
+    }
   }
 
   // .advantages-block__title
