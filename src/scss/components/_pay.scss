@@ -9,6 +9,7 @@
     padding: 128px 0;
     @include bp(mobile) {
       flex-direction: column;
+      padding: 40px 0;
     }
   }
 
