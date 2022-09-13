@@ -42,9 +42,13 @@
           </label>
 
           <label class="label-upload">
-            <input class="label-upload__file" type="file" />
+            <input
+              @change="checkFiles"
+              class="label-upload__file"
+              type="file"
+            />
             <span class="label-upload__btn"></span>
-            <span class="label-upload__text">Максимум 10мб</span>
+            <span class="label-upload__text">{{ nameChoiseFile }}</span>
           </label>
 
           <p class="label-file__descr">
@@ -203,12 +207,21 @@ export default {
   data() {
     return {
       spinImage: false,
+      nameChoiseFile: ".bin",
     };
   },
   methods: {
     checkedFileBin() {
       this.spinImage = this.spinImage === true ? false : true;
       setTimeout(() => (this.spinImage = false), 7000);
+    },
+    checkFiles(event) {
+      let fileName = event.target.files[0];
+      if (fileName.size > 5 * 1024 * 1024) {
+        alert("Файл больше 5mb");
+      } else {
+        this.nameChoiseFile = fileName.name;
+      }
     },
   },
 };
