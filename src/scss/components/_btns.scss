@@ -121,6 +121,9 @@
 
 .btns {
   @include flex-ali-center;
+  @include bp(mobile){
+    display: none;
+  }
 
   &__btn {
     &:not(:last-child) {

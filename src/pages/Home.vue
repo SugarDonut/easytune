@@ -6,12 +6,12 @@
           <span class="tune__left--slogan">tune it fast</span>
           <h1 class="tune__left--main-title">Chip tuning for all vehicles</h1>
           <p class="tune__left--descr">Boost your car's engine power</p>
-          <div class="btns">
-            <button class="btn btns__btn btn-reset btn--grad btn--ingradient">
+          <div class="tune__btns">
+            <button class="btn tune__btn btn-reset btn--grad btn--ingradient">
               Login
             </button>
             <button
-                class="btn btns__btn btn-reset btn--grad btn--outgradient"
+                class="btn tune__btn btn-reset btn--grad btn--outgradient"
             >
               Registration
             </button>

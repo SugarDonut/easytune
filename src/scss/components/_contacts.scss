@@ -4,6 +4,12 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   margin-bottom: 60px;
+  @include bp(mobile){
+    grid-template-columns: repeat(2,1fr);
+    justify-items: flex-start;
+    padding: 0;
+    margin-bottom: 40px;
+  }
 
   &__list {
     height: 92px;
@@ -32,9 +38,16 @@
 
   &__mail {
     justify-self: start;
+    @include bp(mobile){
+      width: 100%;
+      grid-column: 2 span;
+    }
 
     .title {
       margin-bottom: 57px;
+      @include bp(mobile){
+        margin-bottom: 40px;
+      }
     }
 
     h5 {
@@ -68,9 +81,9 @@
     -moz-border-radius: 18px;
     -ms-border-radius: 18px;
     -o-border-radius: 18px;
-
-    // &:hover {
-    //   background: linear-gradient(90deg, #4DADD8 18%, #81E9C0 100%);
-    // }
+    @include bp(mobile){
+      margin-bottom: 20px;
+      width: 100%;
+    }
   }
 }
