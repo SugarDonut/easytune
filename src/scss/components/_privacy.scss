@@ -1,20 +1,62 @@
 .privacy {
   @include flex;
   justify-content: space-between;
+  color: #7c7c7c;
+  margin-top: 84px;
+  padding: 0 15px;
+
+  &__privacy{
+    max-width: 860px;
+  }
+
+  &__title {
+    font-weight: 600;
+    @include toRem(55);
+    line-height: 68px;
+  }
 
   &__title{
-    font-weight: 600;
-@include toRem(55);
-line-height: 68px;
+  }
+
+  &__descr {
+    margin-bottom: 21px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: justify;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    padding: 5px 0;
   }
 
   &__list {
+    padding: 5px 0;
     list-style-type: none;
     counter-reset: item;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: justify;
 
-    & > li::before{
-      content: counters(item, ".") " ";
+    & > li::before {
+      content: counters(item, ".") ".";
       counter-increment: item;
+      font-weight: 400;
+      @include toRem(11);
+      line-height: 18px;
+    }
+
+
+    &--head {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 17px;
     }
   }
+
+
 }
