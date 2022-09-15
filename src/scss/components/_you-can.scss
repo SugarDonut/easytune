@@ -61,10 +61,8 @@
     width: 782px;
     height: 436px;
     text-align: center;
-    background-image: url(./img/graph.svg);
-    // background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top 36px left 81px; //FIXME Возможно надо поправить
+    background: url(./img/graph.svg) no-repeat center left 81px;
+    background-size: calc(86% - 40px);
     @include bp(mobile) {
       display: none;
     }

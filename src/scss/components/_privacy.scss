@@ -1,0 +1,20 @@
+.privacy {
+  @include flex;
+  justify-content: space-between;
+
+  &__title{
+    font-weight: 600;
+@include toRem(55);
+line-height: 68px;
+  }
+
+  &__list {
+    list-style-type: none;
+    counter-reset: item;
+
+    & > li::before{
+      content: counters(item, ".") " ";
+      counter-increment: item;
+    }
+  }
+}

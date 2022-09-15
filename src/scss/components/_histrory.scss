@@ -2,7 +2,7 @@
   flex-grow: 1;
   &__container {
     padding: 71px 0;
-    @include bp(mobile){
+    @include bp(mobile) {
       padding: 40px 0;
     }
   }
@@ -38,7 +38,7 @@
   &__list {
     @include flex;
     margin-right: 41px;
-    @include bp(mobile){
+    @include bp(mobile) {
       display: none;
     }
   }
@@ -51,11 +51,11 @@
   }
 
   &__label > input {
-    font-weight: 500;
     @include toRem(10);
+    font-weight: 500;
     line-height: 9px;
     color: var(--color-boulder);
-    padding: 4px 0;
+    padding: 4px 10px;
   }
 }
 
@@ -168,8 +168,8 @@
       align-items: center;
       justify-content: center;
       height: 45px;
-      padding: 0;
-    
+      padding: 10px 0;
+      height: auto;
     }
 
     &:nth-child(1) {
@@ -197,13 +197,19 @@
       width: 100%;
       height: 40px;
       border-radius: 10px;
+      padding: 25px;
     }
   }
 
-  &__remove > button{
-        background-image: url(./img/danger-btn.svg);
-    background-repeat: no-repeat;
-    background-position: left 10px center;
-    background-size: 20px ;
+  &__remove > button {
+    @include bp(mobile){    
+      background-image: url(./img/danger-btn.svg);
+      background-repeat: no-repeat;
+      background-position: left 10px center;
+      background-size: 20px;
+
+    
+    }
+
   }
 }

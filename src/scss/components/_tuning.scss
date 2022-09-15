@@ -141,7 +141,7 @@
     color: var(--color-shaft);
     border-bottom: 0.5px solid #d3d7db;
     width: 100%;
-    padding-bottom: 5px;
+    padding: 5px 5px;
   }
 }
 
@@ -353,6 +353,7 @@
     background-size: cover;
     background-position: center;
     background-size: 11px 5px;
+    cursor: default;
   }
 
   &__input:not(:disabled):not(:checked):hover + &__text::before {
