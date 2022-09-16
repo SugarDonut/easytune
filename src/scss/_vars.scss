@@ -15,3 +15,9 @@ $grid-breakpoints: (
   tablet: 992px,
   desk: 1312px,
 ) !default;
+
+// Extra small	xs	Small to large phone	< 600px
+// Small	sm	Small to medium tablet	600px > < 960px
+// Medium	md	Large tablet to laptop	960px > < 1264px*
+// Large	lg	Desktop	1264px > < 1904px*
+// Extra large	xl	4k and ultra-wide	> 1904px*

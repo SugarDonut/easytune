@@ -1,21 +1,32 @@
+.privacy-policy {
+  flex-grow: 1;
+}
+
 .privacy {
   @include flex;
   justify-content: space-between;
   color: #7c7c7c;
   margin-top: 84px;
   padding: 0 15px;
+  @include bp(mobile) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0;
+  }
 
-  &__privacy{
+  &__privacy {
     max-width: 860px;
   }
 
   &__title {
-    font-weight: 600;
     @include toRem(55);
+    font-weight: 600;
     line-height: 68px;
-  }
-
-  &__title{
+    padding-right: 15px;
+    @include bp(mobile) {
+      margin-bottom: 40px;
+    }
   }
 
   &__descr {
@@ -31,6 +42,16 @@
     font-size: 11px;
     line-height: 18px;
     padding: 5px 0;
+
+    &--head {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 17px;
+    }
+
+    &--head::before {
+      font-weight: 700 !important;
+    }
   }
 
   &__list {
@@ -49,14 +70,5 @@
       @include toRem(11);
       line-height: 18px;
     }
-
-
-    &--head {
-      font-weight: 700;
-      font-size: 13px;
-      line-height: 17px;
-    }
   }
-
-
 }
