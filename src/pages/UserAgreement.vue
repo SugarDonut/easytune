@@ -2,9 +2,7 @@
   <section class="user-agreement bg--grad">
     <div class="container">
       <div class="agreement">
-        <div class="agreement__title">
-          <h1 class="title">User<br />Agreement</h1>
-        </div>
+        <h1 class="agreement__title title">User<br />Agreement</h1>
         <div class="agreement__agreement">
           <ol class="agreement__list">
             <li class="agreement__item agreement__item--head">
@@ -127,20 +125,47 @@
                 <li class="agreement__item">
                   Account use by the User.
                   <ol class="agreement__list">
-                    <li class="agreement__item"></li>
-                    <li class="agreement__item"></li>
+                    <li class="agreement__item">
+                      The User may not reproduce, duplicate or copy, sell,
+                      resell or use for any commercial purposes any parts of
+                      onlinecarservice.ru services (including content available
+                      to the User through services) or access to
+                      onlinecarservice.ru services, except when authorized by
+                      onlinecarservice.ru or it is directly stated in the user
+                      agreement for any service.
+                    </li>
+                    <li class="agreement__item">
+                      Certain categories of User accounts may restrict or
+                      disable the use of certain onlinecarservice.ru services or
+                      some of their options if required so by the registration
+                      or user terms and conditions regulating such services.
+                    </li>
                   </ol>
                 </li>
                 <li class="agreement__item">
                   Account termination.
                   <ol class="agreement__list">
-                    <li class="agreement__item"></li>
+                    <li class="agreement__item">
+                      onlinecarservice.ru may block or delete the User’s account
+                      as well as prohibit access through any account to certain
+                      onlinecarservice.ru services and delete any content
+                      without giving reasons including in case the User violates
+                      the terms of this Agreement and terms of any documents
+                      listed in Clause 1.3 hereof and in case of failure to use
+                      a service.
+                    </li>
                   </ol>
                 </li>
                 <li class="agreement__item">
                   User account deletion.
                   <ol class="agreement__list">
-                    <li class="agreement__item"></li>
+                    <li class="agreement__item">
+                      The User may at any time delete its account at all
+                      onlinecarservice.ru services or, if such option is
+                      available, terminate the account in respect of certain
+                      services. To delete an account the User must send a
+                      request to support service: support@onlinecarservice.ru.
+                    </li>
                   </ol>
                 </li>
               </ol>
@@ -169,99 +194,183 @@
               </ol>
             </li>
             <li class="agreement__item agreement__item--head">
-              Change and Deletion of Personal Information. Obligatory Data
-              Storage
+              User Content
               <ol class="agreement__list">
                 <li class="agreement__item">
-                  The User may at any time change (update, supplement) the
-                  provided personal information or its part by editing his/her
-                  personal details in the personal section of a respective
-                  Service.
+                  The User shall be responsible for compliance of any content
+                  posted by the User with applicable legal requirements
+                  including responsibility to third parties in case posting by
+                  the User of any content or its subject matter infringes on
+                  rights and legitimate interests of third parties including
+                  personal non-property rights of authors, any other
+                  intellectual property rights of third parties and/or
+                  encroaches on other intangible assets.
                 </li>
                 <li class="agreement__item">
-                  The User may also delete the personal information he has
-                  provided for a particular account by sending request to
-                  support service support@onlinecarservice.ru.
-                </li>
-                <li class="agreement__item">
-                  The rights under clauses 4.1. and 4.2. may be restricted in
-                  accordance with the legislative requirements. In particular,
-                  such restrictions may require that onlinecarservice.ru store
-                  the information changed or deleted by the User for a period
-                  specified by law and provide such information to governmental
-                  authorities according to a relevant legal procedure.
+                  The User acknowledges and agrees that the onlinecarservice.ru
+                  can use the User content at its discretion and can
+                  reproduction of User content for compliance with technical
+                  requirements of a particular service.
                 </li>
               </ol>
             </li>
             <li class="agreement__item agreement__item--head">
-              Processing of Personal Information by Using Cookies and Counters
+              Terms of onlinecarservice.ru Service Usage
               <ol class="agreement__list">
                 <li class="agreement__item">
-                  Cookies transferred by onlinecarservice.ru to the User’s
-                  devices and by the User’s devices to onlinecarservice.ru may
-                  be used by onlinecarservice.ru to provide customized Services
-                  to the User, to target advertising displayed to the User, for
-                  statistical and research purposes and to improve the
-                  onlinecarservice.ru Services.
+                  The User shall be responsible to third parties for any actions
+                  related to the use of onlinecarservice.ru service including
+                  any actions resulting in violation of rights and legitimate
+                  interests of third parties as well as compliance with laws
+                  upon using the onlinecarservice.ru service.
                 </li>
                 <li class="agreement__item">
-                  The User understands that hardware and software he/she uses to
-                  visit websites may have an option for blocking any actions
-                  with cookies (for any websites or for certain websites) and
-                  for deletion of previously received cookies.
-                </li>
-                <li class="agreement__item">
-                  onlinecarservice.ru may determine that provision of a
-                  particular Service is available only subject to the User’s
-                  consent to acceptance and receipt of cookies.
-                </li>
-                <li class="agreement__item">
-                  Structure, content and technical parameters of any cookie
-                  shall be determined by onlinecarservice.ru and may be changed
-                  without prior notice to the User.
-                </li>
-                <li class="agreement__item">
-                  Counters placed by onlinecarservice.ru within the Services may
-                  be used to analyze cookies of the User, to collect and process
-                  statistical information on the
-                </li>
-                <li class="agreement__item">
-                  Service use, and to ensure the performance capacity of the
-                  Services, in general, and their certain functions, in
-                  particular. Technical parameters of counter performance shall
-                  be determined by onlinecarservice.ru and may be changed
-                  without prior notice to the User.
+                  Upon using onlinecarservice.ru service, the User shall not:
+                  <ol class="agreement__list">
+                    <li class="agreement__item">
+                      violate third party rights including underage people
+                      and/or cause harm in any way;
+                    </li>
+                    <li class="agreement__item">
+                      impersonate any other person or representative of an
+                      organization and/or community without being authorized to
+                      do so;
+                    </li>
+                    <li class="agreement__item">
+                      assist any actions to violate any restrictions and
+                      prohibitions imposed by this Agreement;
+                    </li>
+                    <li class="agreement__item">
+                      otherwise violate legal standards including international
+                      law. 5.3. That would process the files the User should
+                      create the tasks for processing (hereinafter - "Processing
+                      Task").
+                    </li>
+                  </ol>
                 </li>
               </ol>
             </li>
             <li class="agreement__item agreement__item--head">
-              User Personal Information Protection Measures
+              Exclusive Rights to Services and Content
               <ol class="agreement__list">
                 <li class="agreement__item">
-                  onlinecarservice.ru shall take necessary and sufficient
-                  organizational and technical measures to protect User personal
-                  information from unlawful or accidental access, deletion,
-                  alteration, blocking, copying, distribution, as well as from
-                  unlawful actions of third parties.
+                  Any objects available through onlinecarservice.ru services
+                  including design elements, ECU files, text, graphics,
+                  illustrations, video, software, databases and other objects
+                  (hereinafter – service content) as well as any content posted
+                  at onlinecarservice.ru services are exclusive property of
+                  onlinecarservice.ru, Users and other right holders.
+                </li>
+              </ol>
+            </li>
+            <li class="agreement__item agreement__item--head">
+              No Guarantees, Limitation of Liability
+              <ol class="agreement__list">
+                <li class="agreement__item">
+                  The User uses onlinecarservice.ru services at his own risk.
+                  Services are provided as is. onlinecarservice.ru accepts not
+                  responsibility including for compliance of services with the
+                  User's goals;
                 </li>
                 <li class="agreement__item">
-                  Your personal information is contained behind secured networks
-                  and is only accessible by a limited number of persons who have
-                  special access rights to such systems, and are required to
-                  keep the information confidential. In addition, all sensitive
-                  information you supply is encrypted via Secure Socket Layer
-                  (SSL) technology.
+                  onlinecarservice.ru does not guarantee that services
+                  comply/will comply with User's requirements; that services
+                  will be provided without interruptions, promptly, sustainably
+                  and without errors; that results received with the use of
+                  services are accurate and reliable and may be used for any
+                  purposes or in any capacity (for instance, for identification
+                  and/or verification of any facts); that the quality of any
+                  product, service, information, etc. received through the
+                  services will meet the User's expectations;
                 </li>
                 <li class="agreement__item">
-                  All transactions are processed through a gateway provider and
-                  are not stored or processed on our servers. An external PCI
-                  compliant payment gateway handles all credit card
-                  transactions. We do not store credit card information.
+                  Any information and/or materials (including ECU files,
+                  downloadable software, messages, any instructions and
+                  guidelines, etc.) which the User accesses through
+                  onlinecarservice.ru services may be used by the User at his
+                  own risk and the User shall be responsible for any potential
+                  consequences of the use of such information and/or materials
+                  including any damage to the User’s computer or third parties,
+                  any damage to the User’s vehicle or third parties or any other
+                  damage;
                 </li>
                 <li class="agreement__item">
-                  We implement a variety of security measures when a user places
-                  an order enters, submits, or accesses their information to
-                  maintain the safety of your personal information.
+                  onlinecarservice.ru shall not be liable for any losses
+                  resulting from the User using onlinecarservice.ru services or
+                  separate parts/ functions of services; 7.5. If the User has
+                  claims to the quality of the services of onlinecarservice.ru,
+                  the User should contact with support service by email
+                  support@onlinecarservice.ru.
+                </li>
+              </ol>
+            </li>
+            <li class="agreement__item agreement__item--head">
+              Other Provisions
+              <ol class="agreement__list">
+                <li class="agreement__item">
+                  This Agreement is an agreement between the User and
+                  onlinecarservice.ru regarding the procedure of using services
+                  and shall replace all previous agreements between the User and
+                  onlinecarservice.ru.
+                </li>
+                <li class="agreement__item">
+                  Nothing in this Agreement shall be interpreted as agency,
+                  partnership, mutual activities, employment or any other
+                  relations not directly stated in this Agreement.
+                </li>
+                <li class="agreement__item">
+                  If for any reasons one or several provisions of this Agreement
+                  are declared invalid or unenforceable, it shall not affect the
+                  validity or enforceability of the remaining provisions hereof.
+                </li>
+                <li class="agreement__item">
+                  Failure by onlinecarservice.ru to act in case of violation by
+                  the User or any other users of the provisions of this
+                  Agreement shall not deprive onlinecarservice.ru of the right
+                  to take action to protect its interests in the future and
+                  shall not be interpreted as waiver by onlinecarservice.ru of
+                  its rights in case of any future similar or identical
+                  violations.
+                </li>
+              </ol>
+            </li>
+            <li class="agreement__item agreement__item--head">
+              Refund Policy
+              <ol class="agreement__list">
+                <li class="agreement__item">
+                  The maximum period during which User can make a claim on
+                  quality of processing of the files is 30 days. The start of
+                  this period is the time of payment of the order. This period
+                  shall be counted for each Processing Task independently and
+                  will not be transferred to other Processing Task.
+                </li>
+                <li class="agreement__item">
+                  That would send the claim, the User must send the email
+                  message to support@onlinecarservice.ru from email address that
+                  User uses in the account. The User acknowledges and agrees
+                  that the claims are not accepted if they have not been sent to
+                  support@onlinecarservice.ru from email address that User uses
+                  in the account.
+                </li>
+                <li class="agreement__item">
+                  The User must provide detailed information in the claim about
+                  problems with the Processing Task, including a description of
+                  the problem, photos, screenshots, and any other information
+                  that confirms the existence of the problem. On demand of the
+                  onlinecarservice.ru, the User must provide any additional
+                  information about problem.
+                </li>
+                <li class="agreement__item">
+                  The User acknowledges and agrees that onlinecarservice.ru has
+                  priority right, that would fix the problems with the
+                  Processing Task specified by the User. The User must wait
+                  until the onlinecarservice.ru will fix the problem or notify
+                  the User that the problem cannot be fixed. 9.5. Refunds can
+                  only be made, if all the following conditions:
+                </li>
+                <li class="agreement__item">
+                  if the onlinecarservice.ru acknowledged that there is a
+                  problem and notified this User by email address;
                 </li>
               </ol>
             </li>

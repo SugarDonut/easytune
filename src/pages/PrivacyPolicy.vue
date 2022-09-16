@@ -2,9 +2,7 @@
   <section class="privacy-policy bg--grad">
     <div class="container">
       <div class="privacy">
-        <div class="privacy__title">
-          <h1 class="title">Privacy<br />Policy</h1>
-        </div>
+        <h1 class="privacy__title title">Privacy<br />Policy</h1>
         <div class="privacy__privacy">
           <p class="privacy__descr">
             The Personal Information Privacy Policy (hereinafter – Policy)
