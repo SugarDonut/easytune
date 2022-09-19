@@ -31,7 +31,7 @@
           <button class="btn btns__btn btn-reset btn--grad btn--outgradient">
             Registration
           </button>
-<!-- 
+          <!-- 
           <button class="btn btns__btn btn-reset btn--grad">
             <img src="../img/btn-doll.svg" alt="" />
             Balance: $100
@@ -43,6 +43,12 @@
           <a class="btns__log-out nav__link" href="">log out</a>
            -->
         </div>
+
+        
+        <label class="burger-checkbox" for="burger">
+          <input class="burger-checkbox__input" type="checkbox" id="burger" />
+          <span class="burger-checkbox__box"></span>
+        </label>
       </div>
     </section>
   </header>

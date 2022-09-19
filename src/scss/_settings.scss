@@ -40,6 +40,64 @@ a {
   cursor: pointer;
 }
 
+.burger-checkbox {
+  --size: 35px;
+  position: relative;
+  height: var(--size);
+  min-width: var(--size);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__input {
+    position: absolute;
+    display: none;
+  }
+
+  &__input:checked ~ &__box,
+  &__input:checked ~ &__box::before,
+  &__input:checked ~ &__box::after {
+    background-color: teal;
+  }
+
+  &__input:checked ~ &__box {
+    transition: 0.2s ease-in-out;
+    background: transparent;
+  }
+
+  &__input:checked ~ &__box::before {
+    transition: transform 0.4s ease-in-out;
+    transform-origin: 1 0;
+    transform: rotate(45deg);
+  }
+
+  &__input:checked ~ &__box::after {
+    transition: transform 0.4s ease-in-out;
+    transform-origin: 0 1;
+    transform: rotate(-45deg);
+  }
+
+  &__box,
+  &__box::after,
+  &__box::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #000;
+    border-radius: 2px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &__box::before {
+    transform: translateY(-10px);
+  }
+  &__box::after {
+    transform: translateY(10px);
+  }
+}
+
 /* Общие стили */
 .white-block {
   background-color: var(--color-white);
@@ -52,7 +110,6 @@ a {
   font-weight: 600;
   line-height: 35px;
   color: var(--color-shaft);
-
 }
 /* Общие стили */
 
