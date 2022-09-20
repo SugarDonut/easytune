@@ -20,6 +20,7 @@
       width: calc(100% /2);
       backdrop-filter: blur(4px);
       background-color: rgb(101, 219, 156, 0.5);
+      text-align: center
     }
   }
   &__list {
@@ -46,7 +47,7 @@
     @include bp(mobile) {
       @include toRem(30);
       font-weight: 500;
-      padding: 0 50px;
+      padding: 0 20px;
       &:hover {
         color: var(--color-white)!important;
       }
