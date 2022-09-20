@@ -28,13 +28,13 @@
     @include flex;
     @include bp(mobile) {
       flex-direction: column;
-      transform: translateY(70px);
+      transform: translateY(200px);
     }
   }
 
   &__item {
     @include bp(mobile) {
-      padding: 15px 0;
+      padding: 25px 0;
       margin-right: 0px !important;
     }
   }
@@ -46,7 +46,7 @@
     letter-spacing: 0.03em;
     color: var(--color-shaft);
     @include bp(mobile) {
-      @include toRem(25);
+      @include toRem(30);
       font-weight: 500;
       padding: 0 50px;
       &:hover {
