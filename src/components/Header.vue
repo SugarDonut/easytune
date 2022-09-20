@@ -66,7 +66,6 @@ export default {
   methods:{
     showListBurger(){
       this.showNavMenu = this.showNavMenu === true ? false:true
-      console.log(this.showNavMenu);
     }
   }
 };

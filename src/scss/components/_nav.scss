@@ -1,16 +1,26 @@
 .nav {
   @include bp(mobile) {
-    display: none;
-    background: #dfdd;
+    display: block;
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     z-index: 2;
+    transform: translateX(170px);
+    transition: transform 0.3s linear;
   }
 
   &__visible {
     display: block;
+    transform: translateX(0px);
+    transition: transform 0.9s ease-in-out;
+    @include bp(mobile){
+      min-width: 200px;
+      backdrop-filter: blur(4px);
+      background-color: rgb(101, 219, 156,0.5);
+      box-shadow: 13px 20px 1px rgb(209, 52, 52);
+      text-align: center;
+    }
   }
   &__list {
     @include flex;
@@ -18,6 +28,13 @@
       flex-direction: column;
       transform: translateY(70px);
       padding: 25px 0;
+    }
+  }
+
+  &__item{
+    @include bp(mobile){
+      padding: 10px;
+      margin-right: 0px!important;
     }
   }
 
