@@ -8,6 +8,9 @@
 
   &__nav {
     margin-left: -214px;
+    @include bp(mobile){
+      display: none;
+    }
   }
 
   &__item {
