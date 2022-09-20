@@ -1,5 +1,5 @@
 <template>
-  <section class="payment bg--grad">
+  <section class="payment bg--grad tuning__bg">
     <div class="container pay__bg">
       <div class="pay__content">
         <div class="pay__balance">
