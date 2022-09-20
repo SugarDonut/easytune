@@ -7,7 +7,7 @@
     right: 0;
     z-index: 2;
     transform: translateX(300px);
-    transition: transform 0.6s linear;
+    transition: transform 0.4s ease-out;
     backdrop-filter: blur(4px);
     background-color: rgb(101, 219, 156, 0.5);
     text-align: center;
@@ -17,7 +17,7 @@
     @include bp(mobile) {
       display: block;
       transform: translateX(0px);
-      transition: transform 0.9s ease-in-out;
+      transition: transform 0.7s ease-in-out;
       min-width: 200px;
       backdrop-filter: blur(4px);
       background-color: rgb(101, 219, 156, 0.5);
