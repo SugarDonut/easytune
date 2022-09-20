@@ -1,8 +1,22 @@
 .nav {
+  @include bp(mobile) {
+    display: none;
+    background: #dfdd;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__visible {
+    display: block;
+  }
   &__list {
     @include flex;
     @include bp(mobile) {
-      display: none;
+      flex-direction: column;
+      transform: translateY(70px);
+      padding: 25px 0;
     }
   }
 

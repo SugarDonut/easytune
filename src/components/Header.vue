@@ -5,7 +5,7 @@
         <router-link class="header__logo" to="/">
           <img src="../img/logo.svg" alt="Easytune logo" />
         </router-link>
-        <nav class="nav">
+        <nav :class="{nav__visible: showNavMenu}" class="nav">
           <ul class="nav__list list-reset">
             <li class="nav__item header__item">
               <router-link class="nav__link nav-color" to="/tuning"
@@ -44,9 +44,8 @@
            -->
         </div>
 
-        
-        <label class="burger-checkbox" for="burger">
-          <input class="burger-checkbox__input" type="checkbox" id="burger" />
+        <label  class="burger-checkbox" for="burger">
+          <input @click="showListBurger" class="burger-checkbox__input" type="checkbox" id="burger" />
           <span class="burger-checkbox__box"></span>
         </label>
       </div>
@@ -57,6 +56,19 @@
 <script>
 export default {
   name: "Header",
+
+  data() {
+    return {
+      showNavMenu: false
+    };
+  },
+
+  methods:{
+    showListBurger(){
+      this.showNavMenu = this.showNavMenu === true ? false:true
+      console.log(this.showNavMenu);
+    }
+  }
 };
 </script>
 

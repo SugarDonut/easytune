@@ -52,6 +52,7 @@ a {
   &__input {
     position: absolute;
     display: none;
+    z-index: -1;
   }
 
   &__input:checked ~ &__box,
