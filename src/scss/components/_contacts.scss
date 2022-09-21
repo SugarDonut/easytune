@@ -43,13 +43,36 @@
       grid-column: 2 span;
       margin-bottom: 20px;
     }
+  }
 
-    .title {
+
+  .contacts-mail{
+    &__title {
       margin-bottom: 57px;
       @include bp(mobile){
         margin: 40px 0;
+        text-align: center;
       }
     }
+
+    &__field {
+      @include flex-cl-с;
+      padding-left: 92px;
+      background-image: url(./img/mail.svg);
+      background-repeat: no-repeat;
+      background-position: center left 23px;
+      background-size: 50px 50px;
+      width: 342px;
+      height: 84px;
+      border-radius: 18px;
+      -webkit-border-radius: 18px;
+      -moz-border-radius: 18px;
+      -ms-border-radius: 18px;
+      -o-border-radius: 18px;
+      @include bp(mobile){
+        margin-bottom: 20px;
+        width: 100%;
+      }
 
     h5 {
       font-weight: 500;
@@ -68,23 +91,5 @@
     }
   }
 
-  &__field {
-    @include flex-cl-с;
-    padding-left: 92px;
-    background-image: url(./img/mail.svg);
-    background-repeat: no-repeat;
-    background-position: center left 23px;
-    background-size: 50px 50px;
-    width: 342px;
-    height: 84px;
-    border-radius: 18px;
-    -webkit-border-radius: 18px;
-    -moz-border-radius: 18px;
-    -ms-border-radius: 18px;
-    -o-border-radius: 18px;
-    @include bp(mobile){
-      margin-bottom: 20px;
-      width: 100%;
-    }
   }
 }

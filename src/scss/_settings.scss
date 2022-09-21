@@ -40,7 +40,10 @@ a {
   cursor: pointer;
 }
 
-.burger-checkbox {
+/*
+* Burger Menu
+*/
+.burgerbox {
   display: none;
   @include bp(mobile) {
     --size: 35px;
@@ -101,7 +104,13 @@ a {
   &__box::after {
     transform: translateY(10px);
   }
+
+  &__fixed {
+    position: fixed;
+    right: 15px;
+  }
 }
+
 
 /* Общие стили */
 .white-block {

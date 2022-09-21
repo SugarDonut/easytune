@@ -31,14 +31,17 @@
       width: 100%;
     }
   }
+
+  &__title {
+    @include toRem(35);
+    color: var(--color-shaft);
+    margin-bottom: 18px;
+    @include bp(mobile){
+      text-align: center;
+    }
+  }
 }
-.subtitle {
-  font-weight: 600;
-  @include toRem(35);
-  line-height: 35px;
-  color: var(--color-shaft);
-  margin-bottom: 18px;
-}
+
 .descr {
   font-weight: 400;
   @include toRem(13);

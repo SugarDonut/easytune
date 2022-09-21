@@ -1,3 +1,13 @@
+.you-can {
+
+  &__title {
+    @include bp(mobile){
+      text-align: center
+    }
+  }
+  }
+  
+
 .service {
   @include flex-sb;
   @include bp(mobile) {
@@ -42,6 +52,9 @@
     line-height: 19px;
     color: var(--color-shaft);
     margin-bottom: 7px;
+    @include bp(mobile){
+      text-align: center;
+    }
   }
 
   // .service__descr

@@ -34,7 +34,7 @@
     <div class="container">
       <div class="chip-tuning__block">
         <div class="chip-tuning__param">
-          <h2 class="subtitle">Chip tuning</h2>
+          <h2 class="chip-tuning__title title">Chip tuning</h2>
           <p class="descr">
             ‒ changes in the parameters of the engine, by making changes to the firmware of the controller.
           </p>
@@ -57,7 +57,7 @@
   </section>
   <section class="you-can">
     <div class="container">
-      <h2 class="title">With our service you can:</h2>
+      <h2 class="you-can__title title">With our service you can:</h2>
       <div class="service">
         <ul class="service__list list-reset">
           <li class="service__item">
@@ -138,11 +138,11 @@
   <section class="contacts">
     <div class="container">
       <div class="contacts-block">
-        <div class="contacts-block__mail">
-          <h2 class="title">Our contacts</h2>
+        <div class="contacts-block__mail contacts-mail">
+          <h2 class="contacts-mail__title title">Our contacts</h2>
           <a
               href="mailto:support@onlinecarservice.ru"
-              class="contacts-block__field white-block"
+              class="contacts-mail__field white-block"
           >
             <h5>e-mail</h5>
             <span>support@onlinecarservice.ru</span>

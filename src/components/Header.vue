@@ -1,4 +1,5 @@
 <template>
+  <et-modal-box v-if="showModal"></et-modal-box>
   <header class="bg--grad">
     <section class="header">
       <div class="container header__container">
@@ -25,13 +26,13 @@
           </ul>
         </nav>
         <div class="btns">
-          <button class="btn btns__btn btn-reset btn--grad btn--ingradient">
+          <button @click="showModalBox" class="btn btns__btn btn-reset btn--grad btn--ingradient">
             Login
           </button>
           <button class="btn btns__btn btn-reset btn--grad btn--outgradient">
             Registration
           </button>
-          <!-- 
+<!--           
           <button class="btn btns__btn btn-reset btn--grad">
             <img src="../img/btn-doll.svg" alt="" />
             Balance: $100
@@ -44,9 +45,9 @@
            -->
         </div>
 
-        <label  class="burger-checkbox" for="burger">
-          <input @click="showListBurger" class="burger-checkbox__input" type="checkbox" id="burger" />
-          <span class="burger-checkbox__box"></span>
+        <label :class="{burgerbox__fixed: showNavMenu}"  class="burgerbox" for="burger">
+          <input @click="showListBurger" class="burgerbox__input" type="checkbox" id="burger" />
+          <span class="burgerbox__box"></span> 
         </label>
       </div>
     </section>
@@ -59,6 +60,7 @@ export default {
 
   data() {
     return {
+      showModal: false,
       showNavMenu: false
     };
   },
@@ -66,6 +68,9 @@ export default {
   methods:{
     showListBurger(){
       this.showNavMenu = this.showNavMenu === true ? false:true
+    },
+    showModalBox(){
+      this.showModal = this.showModal === true ? false:true
     }
   }
 };
