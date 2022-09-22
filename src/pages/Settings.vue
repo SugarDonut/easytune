@@ -1,5 +1,5 @@
 <template>
-  <section class="settings bg--grad">
+  <section class="settings bg--grad tuning__bg">
     <div class="container settings__bg stg">
       <div class="stg__content">
         <div class="stg__change white-block">
@@ -31,7 +31,7 @@
         </div>
         <div class="stg__verif white-block">
           <div class="stg__title">Verification</div>
-          <div class="stg__danger">Email <strong>User@email.com</strong><br> is not verified</div>
+          <div class="stg__danger">Email <strong class="stg__strong">User@email.com</strong><br> is not verified</div>
           <button class="stg__btn btn btn--grad pay__btn">Send verification link</button>
         </div>
       </div>
