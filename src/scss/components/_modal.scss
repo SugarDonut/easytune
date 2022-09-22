@@ -1,6 +1,4 @@
 .modal {
-  display: flex;
-  align-items: flex-start;
   position: fixed;
   background-color: rgba(#000, 0.2);
   top: 0;
@@ -15,15 +13,17 @@
   &__container {
     @include flex-all-cl-с;
     position: relative;
-    width: 464px;
     padding-top: 56px;
     background-color: var(--color-white);
-    margin: 148px auto;
+    transform: translateY(186px);
+    max-width: 400px;
+    margin: 0 auto;
     border-radius: 18px;
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
     -ms-border-radius: 18px;
     -o-border-radius: 18px;
+
   }
 
   &__content {
@@ -63,6 +63,7 @@
   }
 
   &__field {
+    min-width: 260px;
     &:nth-child(1) {
       margin-bottom: 14px;
     }
@@ -101,7 +102,7 @@
 .form-field {
   &__input {
     border: none;
-    width: 364px;
+    width: 100%;
     height: 51px;
     background: #f6f6f6;
     border-radius: 10px;

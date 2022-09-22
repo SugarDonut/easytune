@@ -1,4 +1,5 @@
 <template>
+  <et-modal-box v-if="showModal"></et-modal-box>
   <section class="tune">
     <div class="container tune__bg">
       <div class="tune__content">
@@ -7,12 +8,13 @@
           <h1 class="tune__left--main-title">Chip tuning for all vehicles</h1>
           <p class="tune__left--descr">Boost your car's engine power</p>
           <div class="tune__btns">
-            <button class="btn tune__btn btn-reset btn--grad btn--ingradient">
+            <button
+              @click="showModalBox"
+              class="btn tune__btn btn-reset btn--grad btn--ingradient"
+            >
               Login
             </button>
-            <button
-                class="btn tune__btn btn-reset btn--grad btn--outgradient"
-            >
+            <button class="btn tune__btn btn-reset btn--grad btn--outgradient">
               Registration
             </button>
           </div>
@@ -36,7 +38,8 @@
         <div class="chip-tuning__param">
           <h2 class="chip-tuning__title title">Chip tuning</h2>
           <p class="descr">
-            ‒ changes in the parameters of the engine, by making changes to the firmware of the controller.
+            ‒ changes in the parameters of the engine, by making changes to the
+            firmware of the controller.
           </p>
         </div>
         <div class="chip-tuning__boost">
@@ -103,9 +106,9 @@
               </p>
             </div>
             <img
-                class="percent-hundred__img"
-                src="../img/Car-bg-2.png"
-                alt=""
+              class="percent-hundred__img"
+              src="../img/Car-bg-2.png"
+              alt=""
             />
           </div>
         </div>
@@ -141,8 +144,8 @@
         <div class="contacts-block__mail contacts-mail">
           <h2 class="contacts-mail__title title">Our contacts</h2>
           <a
-              href="mailto:support@onlinecarservice.ru"
-              class="contacts-mail__field white-block"
+            href="mailto:support@onlinecarservice.ru"
+            class="contacts-mail__field white-block"
           >
             <h5>e-mail</h5>
             <span>support@onlinecarservice.ru</span>
@@ -194,10 +197,18 @@
 
 <script>
 export default {
-  name: "Home"
-}
+  name: "Home",
+  data() {
+    return {
+      showModal: false,
+    };
+  },
+  methods: {
+    showModalBox() {
+      this.showModal = this.showModal === true ? false : true;
+    },
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

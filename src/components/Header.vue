@@ -1,5 +1,5 @@
 <template>
-  <et-modal-box v-if="showModal"></et-modal-box>
+
   <header class="bg--grad">
     <section class="header">
       <div class="container header__container">
@@ -26,7 +26,7 @@
           </ul>
         </nav>
         <div class="btns">
-          <button @click="showModalBox" class="btn btns__btn btn-reset btn--grad btn--ingradient">
+          <button class="btn btns__btn btn-reset btn--grad btn--ingradient">
             Login
           </button>
           <button class="btn btns__btn btn-reset btn--grad btn--outgradient">
@@ -60,7 +60,7 @@ export default {
 
   data() {
     return {
-      showModal: false,
+      
       showNavMenu: false
     };
   },
@@ -69,9 +69,7 @@ export default {
     showListBurger(){
       this.showNavMenu = this.showNavMenu === true ? false:true
     },
-    showModalBox(){
-      this.showModal = this.showModal === true ? false:true
-    }
+    
   }
 };
 </script>
