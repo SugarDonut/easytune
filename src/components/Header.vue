@@ -1,12 +1,11 @@
 <template>
-
   <header class="bg--grad">
     <section class="header">
       <div class="container header__container">
         <router-link class="header__logo" to="/">
           <img src="../img/logo.svg" alt="Easytune logo" />
         </router-link>
-        <nav :class="{nav__visible: showNavMenu}" class="nav">
+        <nav :class="{ nav__visible: showNavMenu }" class="nav">
           <ul class="nav__list list-reset">
             <li class="nav__item header__item">
               <router-link class="nav__link nav-color" to="/tuning"
@@ -26,13 +25,13 @@
           </ul>
         </nav>
         <div class="btns">
-          <button class="btn btns__btn btn-reset btn--grad btn--ingradient">
+          <button @click="login" class="btn btns__btn btn-reset btn--grad btn--ingradient">
             Login
           </button>
           <button class="btn btns__btn btn-reset btn--grad btn--outgradient">
             Registration
           </button>
-<!--           
+          <!--           
           <button class="btn btns__btn btn-reset btn--grad">
             <img src="../img/btn-doll.svg" alt="" />
             Balance: $100
@@ -45,9 +44,18 @@
            -->
         </div>
 
-        <label :class="{burgerbox__fixed: showNavMenu}"  class="burgerbox" for="burger">
-          <input @click="showListBurger" class="burgerbox__input" type="checkbox" id="burger" />
-          <span class="burgerbox__box"></span> 
+        <label
+          :class="{ burgerbox__fixed: showNavMenu }"
+          class="burgerbox"
+          for="burger"
+        >
+          <input
+            @click="showListBurger"
+            class="burgerbox__input"
+            type="checkbox"
+            id="burger"
+          />
+          <span class="burgerbox__box"></span>
         </label>
       </div>
     </section>
@@ -60,17 +68,15 @@ export default {
 
   data() {
     return {
-      
-      showNavMenu: false
+      showNavMenu: false,
     };
   },
 
-  methods:{
-    showListBurger(){
-      this.showNavMenu = this.showNavMenu === true ? false:true
+  methods: {
+    showListBurger() {
+      this.showNavMenu = this.showNavMenu === true ? false : true;
     },
-    
-  }
+  },
 };
 </script>
 

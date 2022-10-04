@@ -1,5 +1,5 @@
 <template>
-  <et-modal-box v-if="showModal"></et-modal-box>
+  <et-modal-box v-model:show="showModal"></et-modal-box>
   <section class="tune">
     <div class="container tune__bg">
       <div class="tune__content">
@@ -8,8 +8,7 @@
           <h1 class="tune__left--main-title">Chip tuning for all vehicles</h1>
           <p class="tune__left--descr">Boost your car's engine power</p>
           <div class="tune__btns">
-            <button
-              @click="showModalBox"
+            <button @click="login"
               class="btn tune__btn btn-reset btn--grad btn--ingradient"
             >
               Login
@@ -204,9 +203,9 @@ export default {
     };
   },
   methods: {
-    showModalBox() {
-      this.showModal = this.showModal === true ? false : true;
-    },
+    login(){
+      this.showModal = true
+    }
   },
 };
 </script>

@@ -216,6 +216,7 @@ export default {
       setTimeout(() => (this.spinImage = false), 7000);
     },
     checkFiles(event) {
+      console.log(event);
       let fileName = event.target.files[0];
       if (fileName.size > 5 * 1024 * 1024) {
         alert("Файл больше 5mb");

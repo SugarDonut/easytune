@@ -1,8 +1,8 @@
 <template>
-  <section class="modal">
+  <section class="modal" v-if="show" @click="closeModal">
     <div class="container">
-      <div class="modal__container">
-        <button class="btn-reset modal__close"></button>
+      <div @click.stop class="modal__container">
+        <button class="btn-reset modal__close" @click="closeModal"></button>
         <h1 class="modal__title">Login</h1>
         <!-- <p class="modal__subtitle">
         Enter your e-mail and we will send you<br> a one-time password
@@ -48,6 +48,17 @@
 <script>
 export default {
   name: "ModalBox",
+  props: {
+    show: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  methods: {
+    closeModal() {
+      this.$emit("update:show", false);
+    },
+  },
 };
 </script>
 
