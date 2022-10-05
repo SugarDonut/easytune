@@ -3,13 +3,14 @@
     <div class="container">
       <div @click.stop class="modal__container">
         <button class="btn-reset modal__close" @click="closeModal"></button>
-        <h1 class="modal__title">Login</h1>
-        <!-- <p class="modal__subtitle">
-        Enter your e-mail and we will send you<br> a one-time password
-      </p> -->
+        <h1 class="modal__title">{{ nameTitle }}</h1>
+        <p class="modal__subtitle">
+          Enter your e-mail and we will send you<br />
+          a one-time password
+        </p>
         <p class="modal__subtitle">Check your email, please</p>
         <div class="modal__content">
-          <label class="modal__field form-field" for="email">
+          <label  class="modal__field form-field" for="email">
             <input
               class="form-field__input"
               type="text"
@@ -17,7 +18,7 @@
               placeholder="E-mail"
             />
           </label>
-          <label class="modal__field form-field" for="password">
+          <label  class="modal__field form-field" for="password">
             <input
               class="form-field__input"
               type="text"
@@ -29,11 +30,8 @@
             <a href="#" class="modal__link nav-color">Forgot password?</a>
           </div>
           <div class="modal__btns">
-            <button
-              @click="createdAcc"
-              class="btn btns__btn btn-reset btn--grad btn--ingradient"
-            >
-              Login
+            <button class="btn btns__btn btn-reset btn--grad btn--ingradient">
+              {{nameTitle}}
             </button>
           </div>
           <div class="modal__forgot">
@@ -49,22 +47,21 @@
 <script>
 export default {
   name: "ModalBox",
+  data() {
+    return {
+      registerUser: true,
+    };
+  },
   props: {
     show: {
       type: Boolean,
       default: false,
     },
-    register: {
-      type: Boolean,
-    },
+    nameTitle:String
   },
   methods: {
     closeModal() {
       this.$emit("update:show", false);
-    },
-    createdAcc() {
-      this.$emit("update:register", true);
-      console.log(this.register);
     },
   },
 };

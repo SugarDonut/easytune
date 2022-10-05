@@ -7,7 +7,7 @@
           <img src="../img/logo.svg" alt="Easytune logo" />
         </router-link>
         <nav
-          v-show="registerUser"
+          v-show="checkRegisterUser"
           :class="{ nav__visible: showListBurger }"
           class="nav"
         >
@@ -40,37 +40,37 @@
         </nav>
         <div class="btns">
           <button
-            v-if="!registerUser"
+            v-if="!checkRegisterUser"
             @click="login"
             class="btn btns__btn btn-reset btn--grad btn--ingradient"
           >
             Login
           </button>
           <button
-            v-if="!registerUser"
+            v-if="!checkRegisterUser"
             class="btn btns__btn btn-reset btn--grad btn--outgradient"
           >
             Registration
           </button>
 
-          <button v-if="registerUser" class="btn btns__btn btn-reset btn--grad">
+          <button v-if="checkRegisterUser" class="btn btns__btn btn-reset btn--grad">
             <img src="../img/btn-doll.svg" alt="" />
             Balance: $100
           </button>
           <button
-            v-if="registerUser"
+            v-if="checkRegisterUser"
             class="btn btns__btn btn-reset btn--white"
           >
             <img src="../img/btn-profile.svg" alt="" />
             User@email.com
           </button>
-          <a v-if="registerUser" class="btns__log-out nav__link" href=""
+          <a v-if="checkRegisterUser" class="btns__log-out nav__link" href=""
             >log out</a
           >
         </div>
 
         <label
-          v-if="registerUser"
+          v-if="checkRegisterUser"
           :class="{ burgerbox__fixed: showListBurger }"
           class="burgerbox"
           for="burger"
@@ -96,7 +96,7 @@ export default {
     return {
       showModal: false,
       showListBurger: false,
-      registerUser: false,
+      checkRegisterUser: false,
     };
   },
 
