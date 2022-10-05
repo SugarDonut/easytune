@@ -6,22 +6,33 @@
         <router-link class="header__logo" to="/">
           <img src="../img/logo.svg" alt="Easytune logo" />
         </router-link>
-        <nav :class="{ nav__visible: showListBurger }" class="nav">
+        <nav
+          v-show="registerUser"
+          :class="{ nav__visible: showListBurger }"
+          class="nav"
+        >
           <ul class="nav__list list-reset">
             <li class="nav__item header__item">
-              <router-link @click="showListBurger = false"
+              <router-link
+                @click="showListBurger = false"
                 class="nav__link nav-color"
                 to="/tuning"
                 >Tuning</router-link
               >
             </li>
             <li class="nav__item header__item">
-              <router-link @click="showListBurger = false" class="nav__link nav-color" to="/history"
+              <router-link
+                @click="showListBurger = false"
+                class="nav__link nav-color"
+                to="/history"
                 >History</router-link
               >
             </li>
             <li class="nav__item header__item">
-              <router-link @click="showListBurger = false" class="nav__link nav-color" to="/payment"
+              <router-link
+                @click="showListBurger = false"
+                class="nav__link nav-color"
+                to="/payment"
                 >Payment</router-link
               >
             </li>
@@ -29,28 +40,37 @@
         </nav>
         <div class="btns">
           <button
+            v-if="!registerUser"
             @click="login"
             class="btn btns__btn btn-reset btn--grad btn--ingradient"
           >
             Login
           </button>
-          <button class="btn btns__btn btn-reset btn--grad btn--outgradient">
+          <button
+            v-if="!registerUser"
+            class="btn btns__btn btn-reset btn--grad btn--outgradient"
+          >
             Registration
           </button>
-          <!--           
-          <button class="btn btns__btn btn-reset btn--grad">
+
+          <button v-if="registerUser" class="btn btns__btn btn-reset btn--grad">
             <img src="../img/btn-doll.svg" alt="" />
             Balance: $100
           </button>
-          <button class="btn btns__btn btn-reset btn--white">
+          <button
+            v-if="registerUser"
+            class="btn btns__btn btn-reset btn--white"
+          >
             <img src="../img/btn-profile.svg" alt="" />
             User@email.com
           </button>
-          <a class="btns__log-out nav__link" href="">log out</a>
-           -->
+          <a v-if="registerUser" class="btns__log-out nav__link" href=""
+            >log out</a
+          >
         </div>
 
         <label
+          v-if="registerUser"
           :class="{ burgerbox__fixed: showListBurger }"
           class="burgerbox"
           for="burger"
@@ -75,7 +95,8 @@ export default {
   data() {
     return {
       showModal: false,
-      showListBurger: false
+      showListBurger: false,
+      registerUser: false,
     };
   },
 

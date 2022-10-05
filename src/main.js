@@ -14,6 +14,7 @@ import Settings from "@/pages/Settings";
 import EtModalBox from "@/components/ModalBox";
 import EtHeader from "@/components/Header";
 import EtFooter from "@/components/Footer";
+import Btn from "@/components/Btn";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -36,5 +37,6 @@ app.component("et-modal-box", EtModalBox);
 app.component("et-header", EtHeader);
 app.component("et-footer", EtFooter);
 app.component("et-settings", Settings);
+app.component("et-btn", Btn);
 
 app.mount("#app");

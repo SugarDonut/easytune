@@ -52,9 +52,6 @@
     line-height: 19px;
     color: var(--color-shaft);
     margin-bottom: 7px;
-    @include bp(mobile){
-      text-align: center;
-    }
   }
 
   // .service__descr
