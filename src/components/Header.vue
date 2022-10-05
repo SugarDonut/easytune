@@ -1,31 +1,37 @@
 <template>
+  <et-modal-box v-model:show="showModal"></et-modal-box>
   <header class="bg--grad">
     <section class="header">
       <div class="container header__container">
         <router-link class="header__logo" to="/">
           <img src="../img/logo.svg" alt="Easytune logo" />
         </router-link>
-        <nav :class="{ nav__visible: showNavMenu }" class="nav">
+        <nav :class="{ nav__visible: showListBurger }" class="nav">
           <ul class="nav__list list-reset">
             <li class="nav__item header__item">
-              <router-link class="nav__link nav-color" to="/tuning"
+              <router-link @click="showListBurger = false"
+                class="nav__link nav-color"
+                to="/tuning"
                 >Tuning</router-link
               >
             </li>
             <li class="nav__item header__item">
-              <router-link class="nav__link nav-color" to="/history"
+              <router-link @click="showListBurger = false" class="nav__link nav-color" to="/history"
                 >History</router-link
               >
             </li>
             <li class="nav__item header__item">
-              <router-link class="nav__link nav-color" to="/payment"
+              <router-link @click="showListBurger = false" class="nav__link nav-color" to="/payment"
                 >Payment</router-link
               >
             </li>
           </ul>
         </nav>
         <div class="btns">
-          <button @click="login" class="btn btns__btn btn-reset btn--grad btn--ingradient">
+          <button
+            @click="login"
+            class="btn btns__btn btn-reset btn--grad btn--ingradient"
+          >
             Login
           </button>
           <button class="btn btns__btn btn-reset btn--grad btn--outgradient">
@@ -45,12 +51,12 @@
         </div>
 
         <label
-          :class="{ burgerbox__fixed: showNavMenu }"
+          :class="{ burgerbox__fixed: showListBurger }"
           class="burgerbox"
           for="burger"
         >
           <input
-            @click="showListBurger"
+            v-model="showListBurger"
             class="burgerbox__input"
             type="checkbox"
             id="burger"
@@ -68,13 +74,14 @@ export default {
 
   data() {
     return {
-      showNavMenu: false,
+      showModal: false,
+      showListBurger: false
     };
   },
 
   methods: {
-    showListBurger() {
-      this.showNavMenu = this.showNavMenu === true ? false : true;
+    login() {
+      this.showModal = true;
     },
   },
 };

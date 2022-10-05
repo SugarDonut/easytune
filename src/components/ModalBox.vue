@@ -13,7 +13,6 @@
             <input
               class="form-field__input"
               type="text"
-              name=""
               id="email"
               placeholder="E-mail"
             />
@@ -22,7 +21,6 @@
             <input
               class="form-field__input"
               type="text"
-              name=""
               id="password"
               placeholder="Password"
             />

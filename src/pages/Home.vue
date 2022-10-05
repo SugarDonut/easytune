@@ -8,12 +8,16 @@
           <h1 class="tune__left--main-title">Chip tuning for all vehicles</h1>
           <p class="tune__left--descr">Boost your car's engine power</p>
           <div class="tune__btns">
-            <button @click="login"
+            <button
+              @click="login"
               class="btn tune__btn btn-reset btn--grad btn--ingradient"
             >
               Login
             </button>
-            <button class="btn tune__btn btn-reset btn--grad btn--outgradient">
+            <button
+              @click="registration"
+              class="btn tune__btn btn-reset btn--grad btn--outgradient"
+            >
               Registration
             </button>
           </div>
@@ -203,9 +207,12 @@ export default {
     };
   },
   methods: {
-    login(){
-      this.showModal = true
-    }
+    login() {
+      this.showModal = true;
+    },
+    registration() {
+      this.showModal = true;
+    },
   },
 };
 </script>
