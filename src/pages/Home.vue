@@ -1,7 +1,6 @@
 <template>
   <et-modal-box
     v-model:show="showModal"
-    v-model:registerUser="registerUser"
     :nameTitle="nameTitle"
   ></et-modal-box>
   <section class="tune">
@@ -208,14 +207,12 @@ export default {
   data() {
     return {
       showModal: false,
-      registerUser: false,
-      nameTitle: '',
+      nameTitle: "",
     };
   },
   methods: {
     login() {
       this.showModal = true;
-      this.registerUser = true;
       this.nameTitle = "Login";
     },
     registration() {
@@ -223,9 +220,6 @@ export default {
       this.nameTitle = "Registration";
     },
   },
-  created(){
-    console.log(this.nameTitle);
-  }
 };
 </script>
 

@@ -96,7 +96,7 @@ export default {
     return {
       showModal: false,
       showListBurger: false,
-      checkRegisterUser: false,
+      checkRegisterUser: true,
     };
   },
 

@@ -30,7 +30,7 @@
             <a href="#" class="modal__link nav-color">Forgot password?</a>
           </div>
           <div class="modal__btns">
-            <button class="btn btns__btn btn-reset btn--grad btn--ingradient">
+            <button @click="registerBtn" class="btn btns__btn btn-reset btn--grad btn--ingradient">
               {{nameTitle}}
             </button>
           </div>
@@ -47,11 +47,6 @@
 <script>
 export default {
   name: "ModalBox",
-  data() {
-    return {
-      registerUser: true,
-    };
-  },
   props: {
     show: {
       type: Boolean,
